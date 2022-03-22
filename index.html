@@ -1,197 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cryptocash is Professional Creative Template" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cryptocash is Professional Creative Template"
+    />
     <!-- SITE TITLE -->
     <title>Rivera</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
     <!-- Animation CSS -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <!-- Latest Bootstrap min CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <!-- ionicons CSS -->
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css" />
     <!-- cryptocoins CSS -->
-    <link rel="stylesheet" href="assets/css/cryptocoins.css">
+    <link rel="stylesheet" href="assets/css/cryptocoins.css" />
     <!--- owl carousel CSS-->
-    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/css/owl.theme.default.min.css"
+    />
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/spop.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/spop.min.css" />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <!-- Color CSS -->
-    <link id="layoutstyle" rel="stylesheet" href="assets/color/theme.css">
+    <link id="layoutstyle" rel="stylesheet" href="assets/color/theme.css" />
 
     <!-- <link href="assets/css/scroll.css" rel="stylesheet"> -->
     <!-- End of StatCounter Code -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="assets/js/jquery.nicescroll.min.js" type="text/javascript"></script> -->
     <script src="assets/js/parallaxImg.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"
-        type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" type="text/javascript"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+      type="text/javascript"
+    ></script>
     <script>
-        $(document).ready(function () {
-            var isWebkit = navigator && navigator.userAgent.match(/webkit/i);
-            var $root = $(isWebkit ? 'body' : 'html');
-            var elements = $('div'), elcount = elements.length;
-            var scrolling = false;
-            // Replacing the CSS attr(... url)
-            //   elements.css('background-image', function(i){
-            //     return 'url('+$(this).data('img')+')';
-            //   });
-            //Add permalinks
-            elements.each(function (i) {
-                var $t = $(this);
-                var id = $t.attr('id');
-                if (!id) return;
-                $('<a>').addClass('permalink')
-                    .attr('href', '#' + id)
-                    .appendTo($t);
-            });
-            $root.keydown(function (e) {
-                if (e.keyCode != 37 && e.keyCode != 39) return;
-                var current = scrolling || 0;
-                if (scrolling === false) {
-                    var bsT = $root.scrollTop(), t;
-                    while (current < elcount && (t = elements.eq(current).offset().top) < bsT)
-                        current++;
-                }
-                if (e.keyCode == 37) current--;
-                else if (scrolling !== false || t == bsT) current++;
-                current = (current + elcount) % elcount;
-                $root.stop().animate({ scrollTop: elements.eq(current).offset().top }, function () { scrolling = false; });
-                scrolling = current;
-            });
+      $(document).ready(function () {
+        var isWebkit = navigator && navigator.userAgent.match(/webkit/i);
+        var $root = $(isWebkit ? "body" : "html");
+        var elements = $("div"),
+          elcount = elements.length;
+        var scrolling = false;
+        // Replacing the CSS attr(... url)
+        //   elements.css('background-image', function(i){
+        //     return 'url('+$(this).data('img')+')';
+        //   });
+        //Add permalinks
+        elements.each(function (i) {
+          var $t = $(this);
+          var id = $t.attr("id");
+          if (!id) return;
+          $("<a>")
+            .addClass("permalink")
+            .attr("href", "#" + id)
+            .appendTo($t);
         });
+        $root.keydown(function (e) {
+          if (e.keyCode != 37 && e.keyCode != 39) return;
+          var current = scrolling || 0;
+          if (scrolling === false) {
+            var bsT = $root.scrollTop(),
+              t;
+            while (
+              current < elcount &&
+              (t = elements.eq(current).offset().top) < bsT
+            )
+              current++;
+          }
+          if (e.keyCode == 37) current--;
+          else if (scrolling !== false || t == bsT) current++;
+          current = (current + elcount) % elcount;
+          $root
+            .stop()
+            .animate(
+              { scrollTop: elements.eq(current).offset().top },
+              function () {
+                scrolling = false;
+              }
+            );
+          scrolling = current;
+        });
+      });
     </script>
     <script type="text/javascript">
-        $(document).on("ready", function () {
-            var parallaxSettings = {
-                initialOpacity: 1, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
-                opacitySpeed: 0.1, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
-                pageLoader: true
-            };
+      $(document).on("ready", function () {
+        var parallaxSettings = {
+          initialOpacity: 1, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
+          opacitySpeed: 0.1, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
+          pageLoader: true,
+        };
 
-            parallaxImgScroll(parallaxSettings);
-        });
+        parallaxImgScroll(parallaxSettings);
+      });
     </script>
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
 
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-        }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
 
-        .slider_img {
-            position: relative;
-            height: 90vh;
-            background-image: attr(data-img url);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            border-bottom: 3px solid white;
-            text-align: center;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: -2px;
-            color: rgba(255, 255, 255, 0.85);
-            text-stroke: 1.5px rgba(0, 0, 0, 0.7);
-            cursor: default;
-        }
+      .slider_img {
+        position: relative;
+        height: 90vh;
+        background-image: attr(data-img url);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        border-bottom: 3px solid white;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        color: rgba(255, 255, 255, 0.85);
+        text-stroke: 1.5px rgba(0, 0, 0, 0.7);
+        cursor: default;
+      }
 
-        .slider_img:last-of-type {
-            border-bottom: none;
-        }
+      .slider_img:last-of-type {
+        border-bottom: none;
+      }
 
-        .slider_img:before {
-            content: '';
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-        }
+      .slider_img:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
 
-        .multiline {
-            display: inline-block;
-        }
+      .multiline {
+        display: inline-block;
+      }
 
-        .max {
-            display: block;
-            font-size: 60px;
-            letter-spacing: 1px;
-        }
+      .max {
+        display: block;
+        font-size: 60px;
+        letter-spacing: 1px;
+      }
 
-        .slider_img .permalink {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 16px;
-            height: 16px;
-            background: url(https://i.imgur.com/wdQCy4F.png) center no-repeat;
-            opacity: .2;
-            transition: opacity .5s;
-        }
+      .slider_img .permalink {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background: url(https://i.imgur.com/wdQCy4F.png) center no-repeat;
+        opacity: 0.2;
+        transition: opacity 0.5s;
+      }
 
-        .slider_img .permalink:hover {
-            opacity: 1;
-        }
+      .slider_img .permalink:hover {
+        opacity: 1;
+      }
     </style>
-</head>
+  </head>
 
-<body class="v_dark" data-spy="scroll" data-offset="110">
-
+  <body class="v_dark" data-spy="scroll" data-offset="110">
     <!-- START LOADER -->
     <div id="loader-wrapper">
-        <div id="loading-center-absolute">
-            <div class="object" id="object_four"></div>
-            <div class="object" id="object_three"></div>
-            <div class="object" id="object_two"></div>
-            <div class="object" id="object_one"></div>
-        </div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
+      <div id="loading-center-absolute">
+        <div class="object" id="object_four"></div>
+        <div class="object" id="object_three"></div>
+        <div class="object" id="object_two"></div>
+        <div class="object" id="object_one"></div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
     </div>
     <!-- END LOADER -->
 
     <!-- START HEADER -->
     <header class="header_wrap fixed-top">
-        <div class="custom-container-fluid">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand page-scroll animation" href="#home_section" data-animation="fadeInDown"
-                    data-animation-delay="1s">
-                    <img class="logo_light" src="assets/images/logo.png" alt="logo" />
-                    <!-- <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" /> -->
-                </a>
-                <button class="navbar-toggler animation" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation" data-animation="fadeInDown" data-animation-delay="1.1s">
-                    <span class="ion-android-menu"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto">
-                        <li class="dropdown animation" data-animation="fadeInDown" data-animation-delay="1.1s">
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav nav_btn align-items-center">
-                        <li class="animation" data-animation="fadeInDown" data-animation-delay="1.9s">
-                            <!-- <div class="lng_dropdown">
+      <div class="custom-container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <a
+            class="navbar-brand page-scroll animation"
+            href="#home_section"
+            data-animation="fadeInDown"
+            data-animation-delay="1s"
+          >
+            <img class="logo_light" src="assets/images/logo.png" alt="logo" />
+            <!-- <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" /> -->
+          </a>
+          <button
+            class="navbar-toggler animation"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            data-animation="fadeInDown"
+            data-animation-delay="1.1s"
+          >
+            <span class="ion-android-menu"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li
+                class="dropdown animation"
+                data-animation="fadeInDown"
+                data-animation-delay="1.1s"
+              ></li>
+            </ul>
+            <ul class="navbar-nav nav_btn align-items-center">
+              <li
+                class="animation"
+                data-animation="fadeInDown"
+                data-animation-delay="1.9s"
+              >
+                <!-- <div class="lng_dropdown">
                                 <select name="countries" id="lng_select">
                                     <option value='en' data-image="assets/images/eng.png" data-title="English">EN
                                     </option>
@@ -200,309 +247,638 @@
                                     </option>
                                 </select>
                             </div> -->
-                        </li>
-                        <li class="animation" data-animation="fadeInDown" data-animation-delay="2s"><a
-                                class="btn btn-default-color btn-radius nav_item" href="login.html">Login</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+              </li>
+              <li
+                class="animation"
+                data-animation="fadeInDown"
+                data-animation-delay="2s"
+              >
+                <a
+                  class="btn btn-default-color btn-radius nav_item"
+                  href="login.html"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- END HEADER -->
 
     <!-- START SECTION BANNER -->
-    <section class="bg_black_dark" data-z-index="1" data-parallax="scroll"
-    data-image-src="assets/images/banner_bg2.png">
-        <!-- <canvas id="banner_canvas" class="transparent_effect fixed"></canvas> -->
-        <div class="custom-container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 col-sm-12 order-lg-first">
-                    <div class="banner_text_s2 text_md_center">
-                        <h1 class="animation text-white" data-animation="fadeInUp" data-animation-delay="1.1s">
-                            <strong>Your Gateway to<br> <span class="gradient_txt">DeFi</span> Earnings</strong>
-                            <!-- <strong>DeFi</strong> bridge for <br> traditional <strong>investors</strong> -->
-                        </h1>
-                        <div>
-                            The most convinient and secure way to enter DeFi ecosystem. Buy crypto assets easily, lend
-                            or stake them to earn higher, in an all-in-one app!
-                        </div>
-                        <div class="btn_group pt-2 pb-3 animation" data-animation="fadeInUp"
-                            data-animation-delay="1.4s">
-                            <a href="#whitepaper" class="btn btn-default-color btn-radius nav-link content-popup">Get
-                                Early
-                                Access</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12 col-sm-12 order-first">
-                    <div data-w-id="399156b5-6533-03d7-6456-fd573f90e440" class="c-section-phone">
-                        <div class="_w-section-phone">
-                            <div class="c-phone-left-col">
-                                <div class="_w-phone-left-col">
-                                    <div class="c-phone-frame">
-                                        <div class="_w-phone-frame"><img
-                                                src="https://uploads-ssl.webflow.com/61eee289c1264b822d8ce543/61fa7e7967addbb5eb5e224d_frame.png"
-                                                alt="Pillow-Home-Scroll" loading="eager" class="phone-frame"
-                                                style="height: 80vh;" />
-                                            <div class="c-phone-content">
-                                                <div class="_w-phone-content">
-                                                    <div class="c-content-scroll" id="parallax_offset"
-                                                        style="background-image: url(assets/images/x3.png);    background-size: 260px;">
-                                                        <!-- <img  src="https://uploads-ssl.webflow.com/61eee289c1264b822d8ce543/61fc1db218c6c202f0b0e7dd_home%20(2).svg"
-                                                            alt="" /> -->
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section>
+      <!-- <canvas id="banner_canvas" class="transparent_effect fixed"></canvas> -->
+      <div class="custom-container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12 col-sm-12 order-lg-first">
+            <div class="banner_text_s2 text_md_center">
+              <h1
+                class="animation text-white"
+                data-animation="fadeInUp"
+                data-animation-delay="1.1s"
+              >
+                <strong
+                  >Your Gateway to<br />
+                  <span class="gradient_txt">DeFi</span> Earnings</strong
+                >
+                <!-- <strong>DeFi</strong> bridge for <br> traditional <strong>investors</strong> -->
+              </h1>
+              <div>
+                The most convinient and secure way to enter DeFi ecosystem. Buy
+                crypto assets easily, lend or stake them to earn higher, in an
+                all-in-one app!
+              </div>
+              <div
+                class="btn_group pt-2 pb-3 animation"
+                data-animation="fadeInUp"
+                data-animation-delay="1.4s"
+              >
+                <a
+                  href="#whitepaper"
+                  class="btn btn-default-color btn-radius nav-link content-popup"
+                  >Get Early Access</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col-lg-7 col-md-12 col-sm-12 order-first">
+            <div
+              data-w-id="399156b5-6533-03d7-6456-fd573f90e440"
+              class="c-section-phone"
+            >
+              <div class="_w-section-phone">
+                <div class="c-phone-left-col">
+                  <div class="_w-phone-left-col">
+                    <div class="c-phone-frame">
+                      <div class="_w-phone-frame">
+                        <img
+                          src="https://uploads-ssl.webflow.com/61eee289c1264b822d8ce543/61fa7e7967addbb5eb5e224d_frame.png"
+                          alt="Pillow-Home-Scroll"
+                          loading="eager"
+                          class="phone-frame"
+                          style="height: 80vh"
+                        />
+                        <div class="c-phone-content">
+                          <div class="_w-phone-content">
+                            <div
+                              class="c-content-scroll"
+                              id="parallax_offset"
+                              style="
+                                background-image: url(assets/images/x3.png);
+                                background-size: 260px;
+                              "
+                            >
+                              <!-- <img  src="https://uploads-ssl.webflow.com/61eee289c1264b822d8ce543/61fc1db218c6c202f0b0e7dd_home%20(2).svg"
+                                                            alt="" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- END SECTION BANNER -->
 
-
     <!-- START SECTION SERVICES -->
     <section id="investment" class="small_pt">
-        <div class="custom-container">
-            <div class="header_txt text-center">DeFi investment accessible to all</div>
-            <div class="text-center mb-5 txt_wht text-md-80">With DeFi, Investors can directly participate in running the new age financial
-                applications, replacing
-                legacy intermediaries. However, the current approach to support DeFi is technically complex and not so
-                user friendly. We are building an all-in-one mobile app for all your DeFi needs.</div>
-            <div class="row align-items-center investment_backgrnd">
-                <div class="col-lg-6 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
-                    <div>
-                        <div class="list_inner">
-                            <div class="mrgn_rgt_10"><img src="assets/images/circle_green.png"></div>
-                            <div class="animation" data-animation="fadeInUp" data-animation-delay=".2s">
-
-
-                                <div class="list_header mb-2">
-                                    Get started in minutes
-                                </div>
-                                <div class="txt_wht">
-                                    Connect from anywhere with our intutive mobile app. Buy crypto
-                                    assets and participate in DeFi with a click. 
-                                </div>
-
-                                <!-- <span class="list_header"> Get started in minutes</span>
-                                <br>
-                                <span class="txt_wht">Connect from anywhere with our intutive mobile app. Buy crypto
-                                    assets and participate in DeFi with a click. </span> -->
-                            </div>
-                        </div>
-                        <div class="list_inner">
-                            <div class="mrgn_rgt_10"><img src="assets/images/circle_green.png"></div>
-                            <div class="animation" data-animation="fadeInUp" data-animation-delay=".3s">
-                                <div class="list_header mb-2">
-                                    You are always in control
-                                </div>
-                                <div class="txt_wht">
-                                    Your crypto assets are never locked and you can exit your
-                                    positions at any time. Instant deposit & withdrawal.
-                                </div>
-
-                                <!-- <span class="list_header">You are always in control</span>
-                                <br>
-                                <span class="txt_wht">Your crypto assets are never locked and you can exit your
-                                    positions at any time. Instant deposit & withdrawal.</span> -->
-                            </div>
-                        </div>
-                        <div class="list_inner">
-                            <div class="mrgn_rgt_10"><img src="assets/images/circle_green.png"></div>
-                            <div class="animation" data-animation="fadeInUp" data-animation-delay=".4s">
-                                <div class="list_header mb-2">
-                                    Funds safety, without any headache
-                                </div>
-                                <div class="txt_wht">
-                                    All your assets are safeguarded with our licensed and compliant
-                                    partners who are regularly audited.
-                                </div>
-
-                                <!-- <span class="list_header">Funds safety, without any headache</span>
-                                <br>
-                                <span class="txt_wht">All your assets are safeguarded with our licensed and compliant
-                                    partners who are regularly audited. </span> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="text-center">
-                        <img class="animation abt_img" data-animation="zoomIn" data-animation-delay="0.2s"
-                            src="assets/images/about_img2.png" alt="aboutimg2" />
-                    </div>
-                </div>
-
+      <div class="custom-container">
+        <div class="flex_cnt">
+          <div class="stack_first">
+            <div class="txt_wht">
+              Enjoy <span class="gradient_txt">13%</span> passive return with
+              Stable Coins
             </div>
+            <div class="stack_inner_txt mt-3 mb-4">
+              Enjoy a stable return on the extra money lying in your bank
+              account.
+            </div>
+            <div class="flex_cnt">
+              <div class="right_border">
+                <span class="txt_wht">10.56%*</span><br />
+                <span class="stack_inner_txt">APR</span>
+              </div>
+              <div>
+                <span class="txt_wht">10.56%*</span><br />
+                <span class="stack_inner_txt">APR</span>
+              </div>
+            </div>
+          </div>
+          <div class="stack_second">
+            <div>Earn upto 20% interest on your holdings</div>
+            <div class="stack_inner_txt mt-3 mb-4">
+              Use our crypto wallet to buy or store your favourite crypto
+              assets.
+            </div>
+            <div>COMING SOON</div>
+          </div>
+          <div class="stack_second">
+            <div>Earn upto 60% APY by staking your assets</div>
+            <div class="stack_inner_txt mt-3 mb-4">
+              Participate in DeFi projects by staking your crypto assets with a
+              click.
+            </div>
+            <div>COMING SOON</div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- END SECTION SERVICES -->
 
+    <!-- START SECTION SERVICES -->
+    <section id="investment" class="small_pt">
+      <div class="custom-container">
+        <div class="header_txt text-center mb-5">
+          Simple Solution, Higher Returns
+        </div>
+        <div class="flex_cnt">
+          <div class="return_section animation" data-animation="zoomIn" data-animation-delay="0.2s">
+            <div class="stack_img mb-4">
+              <img src="assets/images/return1.png" />
+            </div>
+            <div class="gradient_txt sub_header_txt">
+              No volatility, start with stable coins
+            </div>
+          </div>
+          <div class="return_section animation" data-animation="zoomIn" data-animation-delay="0.2s">
+            <div class="stack_img mb-4">
+              <img src="assets/images/return2.png" style="width: 80px" />
+            </div>
+            <div class="gradient_txt sub_header_txt">
+              Invest via your bank account
+            </div>
+          </div>
+          <div class="return_section animation" data-animation="zoomIn" data-animation-delay="0.2s">
+            <div class="stack_img mb-4">
+              <img src="assets/images/return3.png" />
+            </div>
+            <div class="gradient_txt sub_header_txt">
+              No lock-in, Instant Withdrawl
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION SERVICES -->
+
+    <!-- START SECTION SERVICES -->
+    <section id="investment" class="small_pt">
+      <div class="custom-container">
+        <div class="header_txt text-center mb-5">
+          Your gateway to DeFi earnings
+        </div>
+        <div class="text-center mb-5 txt_wht text-md-80">
+          DeFi investors can directly participate in governing the new age
+          financial applications and earn higher returns by replacing existing
+          middle-men. However, DeFi investing needs steep learning.
+        </div>
+        <div class="flex_cnt">
+          <div class="flip-div gateway_section">
+            <div class="flip-main">
+              <div class="front">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="stack_img mb-4">
+                      <img src="assets/images/gateway1.png" />
+                    </div>
+                    <div class="list_header">Connect anytime, anywhere</div>
+                  </div>
+                </div>
+              </div>
+              <div class="back">
+                <div class="card">
+                    <div class="card-body text-center">
+                      <div>Your crypto assets are never locked and you can exit your positions at any time. Instant deposit & withdrawal.</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-div gateway_section">
+            <div class="flip-main">
+              <div class="front">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="stack_img mb-4">
+                      <img src="assets/images/gateway2.png" />
+                    </div>
+                    <div class="list_header">You are always in control</div>
+                  </div>
+                </div>
+              </div>
+              <div class="back">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div>Your crypto assets are never locked and you can exit your positions at any time. Instant deposit & withdrawal.</div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-div gateway_section">
+            <div class="flip-main">
+              <div class="front">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="stack_img mb-4">
+                      <img src="assets/images/gateway3.png" />
+                    </div>
+                    <div class="list_header">Funds safety, without headache</div>
+                  </div>
+                </div>
+              </div>
+              <div class="back">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div>Your crypto assets are never locked and you can exit your positions at any time. Instant deposit & withdrawal.</div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION SERVICES -->
+
+    <!-- START SECTION SERVICES -->
+    <section id="investment" class="small_pt" >
+      <div class="flex_cnt gradient_background" style="padding: 20px 0px;">
+        <div class="learn_section">
+          <div class="header_txt  text_start mb-2">Learn DeFi?</div>
+          <div class="txt_wht text_start mb-3">
+            Join our mailing list to get latest updates on the industry and how
+            it works.
+          </div>
+          <div class="button_align">
+            <div>
+              <button class="btn transparent_btn">Read FAQ’s</button>
+            </div>
+            <div>
+              <button class="btn transparent_btn">Visit Blog</button>
+            </div>
+          </div>
+        </div>
+        <div class="learn_section" style="margin: auto 0;">
+          <form>
+            <div class="col-lg-10 mb-3">
+              <div class="input-group mycustom">
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  id="validationDefaultUsername"
+                  placeholder="Username"
+                  aria-describedby="inputGroupPrepend2"
+                  required
+                />
+                <div class="input-group-prepend">
+                  <button class="btn btn_sbmt_back">Submit</button>
+                  <!-- <input
+                    type="submit"
+                    vlaue="submit"
+                    class="btn btn-primary btn-sm rounded-0"
+                    id="inputGroupPrepend2"
+                  /> -->
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION SERVICES -->
+
+    <!-- START SECTION SERVICES -->
+    <section id="investment" class="small_pt">
+      <div class="custom-container">
+        <div class="header_txt text-center">
+          DeFi investment accessible to all
+        </div>
+        <div class="text-center mb-5 txt_wht text-md-80">
+          With DeFi, Investors can directly participate in running the new age
+          financial applications, replacing legacy intermediaries. However, the
+          current approach to support DeFi is technically complex and not so
+          user friendly. We are building an all-in-one mobile app for all your
+          DeFi needs.
+        </div>
+        <div class="row align-items-center investment_backgrnd">
+          <div class="col-lg-6 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
+            <div>
+              <div class="list_inner">
+                <div class="mrgn_rgt_10">
+                  <img src="assets/images/circle_green.png" />
+                </div>
+                <div
+                  class="animation"
+                  data-animation="fadeInUp"
+                  data-animation-delay=".2s"
+                >
+                  <div class="list_header mb-2">Get started in minutes</div>
+                  <div class="txt_wht">
+                    Connect from anywhere with our intutive mobile app. Buy
+                    crypto assets and participate in DeFi with a click.
+                  </div>
+
+                  <!-- <span class="list_header"> Get started in minutes</span>
+                                <br>
+                                <span class="txt_wht">Connect from anywhere with our intutive mobile app. Buy crypto
+                                    assets and participate in DeFi with a click. </span> -->
+                </div>
+              </div>
+              <div class="list_inner">
+                <div class="mrgn_rgt_10">
+                  <img src="assets/images/circle_green.png" />
+                </div>
+                <div
+                  class="animation"
+                  data-animation="fadeInUp"
+                  data-animation-delay=".3s"
+                >
+                  <div class="list_header mb-2">You are always in control</div>
+                  <div class="txt_wht">
+                    Your crypto assets are never locked and you can exit your
+                    positions at any time. Instant deposit & withdrawal.
+                  </div>
+
+                  <!-- <span class="list_header">You are always in control</span>
+                                <br>
+                                <span class="txt_wht">Your crypto assets are never locked and you can exit your
+                                    positions at any time. Instant deposit & withdrawal.</span> -->
+                </div>
+              </div>
+              <div class="list_inner">
+                <div class="mrgn_rgt_10">
+                  <img src="assets/images/circle_green.png" />
+                </div>
+                <div
+                  class="animation"
+                  data-animation="fadeInUp"
+                  data-animation-delay=".4s"
+                >
+                  <div class="list_header mb-2">
+                    Funds safety, without any headache
+                  </div>
+                  <div class="txt_wht">
+                    All your assets are safeguarded with our licensed and
+                    compliant partners who are regularly audited.
+                  </div>
+
+                  <!-- <span class="list_header">Funds safety, without any headache</span>
+                                <br>
+                                <span class="txt_wht">All your assets are safeguarded with our licensed and compliant
+                                    partners who are regularly audited. </span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="text-center">
+              <img
+                class="animation abt_img"
+                data-animation="zoomIn"
+                data-animation-delay="0.2s"
+                src="assets/images/about_img2.png"
+                alt="aboutimg2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION SERVICES -->
 
     <!-- START slide -->
     <section id="plan">
-        <div class="custom-container">
-            <ul id="cards">
-                <li class="card" id="card_1">
-                    <div class="card__content">
-                        <div class="text-center header_txt mt-4 animation" data-animation="fadeInUp"
-                            data-animation-delay=".5s">New in Crypto?</div>
-                        <div class="text-center txt_wht sub_header_txt mb-5">
-                            Enjoy <span class="gradient_txt fnt_36 fntWght600 mt-2">13%</span> passive return with Stable Coins
+      <div class="custom-container">
+        <ul id="cards">
+          <li class="card" id="card_1">
+            <div class="card__content">
+              <div
+                class="text-center header_txt mt-4 animation"
+                data-animation="fadeInUp"
+                data-animation-delay=".5s"
+              >
+                New in Crypto?
+              </div>
+              <div class="text-center txt_wht sub_header_txt mb-5">
+                Enjoy
+                <span class="gradient_txt fnt_36 fntWght600 mt-2">13%</span>
+                passive return with Stable Coins
+              </div>
+              <div class="flex_content">
+                <div>
+                  <img src="assets/images/plan111.png" style="width: 350px" />
+                </div>
+                <div class="wdt_55">
+                  <div
+                    class="animation txt_wht mb-3"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".2s"
+                  >
+                    Enjoy a stable return on the extra money lying in your
+                    <br />
+                    bank account.
+                  </div>
+                  <div
+                    class="animation txt_wht"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".4s"
+                  >
+                    <span class="fntWght600"
+                      >Shielded from crypto assets market volatility</span
+                    >
+                    USDT, USDC & DAI are stable coins pegged to USD and so your
+                    portfolio is protected from crypto assets market volatility.
+                  </div>
+                  <div>
+                    <div class="crypto_flex_content mt-4">
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
                         </div>
-                        <div class="flex_content">
-                            <div>
-                                <img src="/assets/images/plan111.png" style="width:350px">
-                            </div>
-                            <div class="wdt_55">
-                                <div class="animation txt_wht mb-3" data-animation="fadeInUp"
-                                    data-animation-delay=".2s">
-                                    Enjoy a stable return on the extra money lying in your <br> bank account.
-                                </div>
-                                <div class="animation txt_wht" data-animation="fadeInUp" data-animation-delay=".4s">
-                                    <span class="fntWght600">Shielded from crypto assets market volatility</span>
-                                    USDT, USDC & DAI are stable coins pegged to USD and so
-                                    your portfolio is protected from crypto assets market volatility.
-                                </div>
-                                <div>
-                                    <div class="crypto_flex_content mt-4">
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            <div class="mrgn_auto">No lock-in</div>
-                                        </div>
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            Zero transaction <br> fees
-                                        </div>
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            Instant Deposit & <br> Withdrawal
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="mrgn_auto">No lock-in</div>
+                      </div>
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
                         </div>
-
+                        Zero transaction <br />
+                        fees
+                      </div>
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
+                        </div>
+                        Instant Deposit & <br />
+                        Withdrawal
+                      </div>
                     </div>
-                </li>
-                <li class="card" id="card_2">
-                    <div class="card__content">
-                        <div class="text-center header_txt mt-4">Hold Crypto?</div>
-                        <div class="text-center txt_wht sub_header_txt mb-5">
-                            Earn upto <span class="gradient_txt fnt_36 fntWght600 mt-2">20%</span> interest on your holdings
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card" id="card_2">
+            <div class="card__content">
+              <div class="text-center header_txt mt-4">Hold Crypto?</div>
+              <div class="text-center txt_wht sub_header_txt mb-5">
+                Earn upto
+                <span class="gradient_txt fnt_36 fntWght600 mt-2">20%</span>
+                interest on your holdings
+              </div>
+              <div class="flex_content">
+                <div>
+                  <img src="assets/images/plan222.png" style="width: 350px" />
+                </div>
+                <div class="wdt_55">
+                  <div
+                    class="animation txt_wht mb-3"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".2s"
+                  >
+                    Use our crypto wallet to buy or store your favourite <br />
+                    crypto assets.
+                  </div>
+                  <div
+                    class="animation txt_wht"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".4s"
+                  >
+                    <span class="fntWght600"
+                      >Easy and secure way to grow your crypto assets</span
+                    >
+                    Multiply your crypto investment returns by lending your
+                    assets. Earn a fixed interest on your favorite crypto assets
+                    holding.
+                  </div>
+                  <div>
+                    <div class="crypto_flex_content mt-4">
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
                         </div>
-                        <div class="flex_content">
-                            <div>
-                                <img src="/assets/images/plan222.png" style="width:350px">
-                            </div>
-                            <div class="wdt_55">
-                                <div class="animation txt_wht mb-3" data-animation="fadeInUp"
-                                    data-animation-delay=".2s">
-                                    Use our crypto wallet to buy or store your favourite <br> crypto assets.
-                                </div>
-                                <div class="animation txt_wht" data-animation="fadeInUp" data-animation-delay=".4s">
-                                    <span class="fntWght600">Easy and secure way to grow your crypto assets</span>
-                                    Multiply your crypto investment returns by lending your 
-                                    assets. Earn a fixed interest on your favorite crypto assets holding.
-
-                                </div>
-                                <div>
-                                    <div class="crypto_flex_content mt-4">
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            <div class="mrgn_auto">No lock-in</div>
-                                        </div>
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            Zero transaction <br> fees
-                                        </div>
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            Instant Deposit & <br> Withdrawal
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="mrgn_auto">No lock-in</div>
+                      </div>
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
                         </div>
-
+                        Zero transaction <br />
+                        fees
+                      </div>
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
+                        </div>
+                        Instant Deposit & <br />
+                        Withdrawal
+                      </div>
                     </div>
-                </li>
-                <li class="card" id="card_3">
-                    <div class="card__content">
-                        <div class="text-center header_txt mt-4">Stake in DeFi projects?</div>
-                        <div class="text-center txt_wht sub_header_txt mb-5">
-                            Earn upto <span class="gradient_txt fnt_36 fntWght600 mt-2">60%</span> APY by staking your assets
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="card" id="card_3">
+            <div class="card__content">
+              <div class="text-center header_txt mt-4">
+                Stake in DeFi projects?
+              </div>
+              <div class="text-center txt_wht sub_header_txt mb-5">
+                Earn upto
+                <span class="gradient_txt fnt_36 fntWght600 mt-2">60%</span> APY
+                by staking your assets
+              </div>
+              <div class="flex_content">
+                <div>
+                  <img src="assets/images/plan333.png" style="width: 350px" />
+                </div>
+                <div class="wdt_55">
+                  <div
+                    class="animation txt_wht mb-3"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".2s"
+                  >
+                    Participate in DeFi projects by staking your crypto <br />
+                    assets with a click.
+                  </div>
+                  <div
+                    class="animation txt_wht"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".4s"
+                  >
+                    <span class="fntWght600">
+                      Make passive income by staking to DeFi
+                    </span>
+                    Become a liquidity provider, govern projects, mine tokens,
+                    and support run DeFi applications by easily staking with a
+                    click.
+                  </div>
+                  <div>
+                    <div class="crypto_flex_content mt-4">
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
                         </div>
-                        <div class="flex_content">
-                            <div>
-                                <img src="/assets/images/plan333.png" style="width:350px">
-                            </div>
-                            <div class="wdt_55">
-                                <div class="animation txt_wht mb-3" data-animation="fadeInUp"
-                                    data-animation-delay=".2s">
-                                    Participate in DeFi projects by staking your crypto <br> assets with a click.
-                                </div>
-                                <div class="animation txt_wht" data-animation="fadeInUp" data-animation-delay=".4s">
-                                    <span class="fntWght600"> Make passive income by staking to DeFi </span> 
-                                    Become a liquidity provider, govern projects, mine tokens, 
-                                    and support run DeFi applications by easily staking with a click.
-
-                                </div>
-                                <div>
-                                    <div class="crypto_flex_content mt-4">
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            <div class="mrgn_auto">No lock-in</div>
-                                        </div>
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            Zero transaction <br> fees
-                                        </div>
-                                        <div class="crypt_inner_back crypto_flex_content">
-                                            <div class="crypto_flex_content_img">
-                                                <img src="assets/images/circle_green.png" class="wdth30">
-                                            </div>
-                                            Instant Deposit & <br> Withdrawal
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="mrgn_auto">No lock-in</div>
+                      </div>
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
                         </div>
-
+                        Zero transaction <br />
+                        fees
+                      </div>
+                      <div class="crypt_inner_back crypto_flex_content">
+                        <div class="crypto_flex_content_img">
+                          <img
+                            src="assets/images/circle_green.png"
+                            class="wdth30"
+                          />
+                        </div>
+                        Instant Deposit & <br />
+                        Withdrawal
+                      </div>
                     </div>
-                </li>
-            </ul>
-
-        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- END slide -->
-
-
-
 
     <!-- START SECTION PHONE ppppp -->
     <!-- <section>
@@ -549,24 +925,25 @@
     </section> -->
     <!-- END SECTION PHONE -->
 
-
     <!-- START SECTION PHONE -->
     <section>
-        <div class="custom-container">
-            <div class="grwth_back" id="grwth_back">
-                <div>
-                    <div class="title_default_light title_border text-center">
-                        <div class="cushhion_class pt_140">Cushion your crypto investments
-                            by joining the <span class="gradient_txt">15%</span> club</div>
-                        <div class="mb_250"><img src="/assets/images/investment_back.png">
-                        </div>
-                    </div>
-                </div>
+      <div class="custom-container">
+        <div class="grwth_back" id="grwth_back">
+          <div>
+            <div class="title_default_light title_border text-center">
+              <div class="cushhion_class pt_140">
+                Cushion your crypto investments by joining the
+                <span class="gradient_txt">15%</span> club
+              </div>
+              <div class="mb_250">
+                <img src="assets/images/investment_back.png" />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- END SECTION SERVICES -->
-
 
     <!-- START SECTION SERVICES -->
     <!-- <section id="service" class="small_pb small_pt">
@@ -616,371 +993,584 @@
     </section> -->
     <!-- END SECTION SERVICES -->
 
-
-
     <!-- START SECTION ABOUT US -->
     <section id="about" class="small_pt section_gap_black_white">
-        <div class="custom-container-simple" style="margin-bottom: 50px;">
-            <div class="row align-items-center">
-
-                <div class="col-lg-7 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
-                    <div class="linear_back_box mb-5 animation" data-animation="zoomIn" data-animation-delay="0.2s">
-                        <div class="mb-4 list_header animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                            Convenience</div>
-                        <div class="d-flex" style="justify-content: space-between;">
-                            <div class="linear_back_box_flx">
-                                <img src="assets/images/hand.png">
-                                <div class="list_header mt-3 mb-2">
-                                    Simplest UI
-                                </div>
-                                <div class="txt_wht line_height20">
-                                    Build for audiences with zero crypto assets
-                                    and DeFi knowledge
-                                </div>
-                                <!-- <span class="linear_back_box_flx_header">Simplest UI</span>
+      <div class="custom-container-simple" style="margin-bottom: 50px">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
+            <div
+              class="linear_back_box mb-5 animation"
+              data-animation="zoomIn"
+              data-animation-delay="0.2s"
+            >
+              <div
+                class="mb-4 list_header animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                Convenience
+              </div>
+              <div class="d-flex" style="justify-content: space-between">
+                <div class="linear_back_box_flx">
+                  <img src="assets/images/hand.png" />
+                  <div class="list_header mt-3 mb-2">Simplest UI</div>
+                  <div class="txt_wht line_height20">
+                    Build for audiences with zero crypto assets and DeFi
+                    knowledge
+                  </div>
+                  <!-- <span class="linear_back_box_flx_header">Simplest UI</span>
                                 <span class="linear_back_box_flx_subheader">Build for audiences with zero crypto assets
                                     and DeFi knowledge</span> -->
-                            </div>
-                            <div class="linear_back_box_flx">
-                                <img src="assets/images/tax.png" style="width: 52px;">
-                                <div class="list_header mt-3 mb-2">
-                                    Tax Advisory
-                                </div>
-                                <div class="txt_wht line_height20">
-                                    Get instant tax advisory and tax reports for
-                                    easy filing
-                                </div>
-                                <!-- <span class="linear_back_box_flx_header">Tax Advisory</span>
+                </div>
+                <div class="linear_back_box_flx">
+                  <img src="assets/images/tax.png" style="width: 52px" />
+                  <div class="list_header mt-3 mb-2">Tax Advisory</div>
+                  <div class="txt_wht line_height20">
+                    Get instant tax advisory and tax reports for easy filing
+                  </div>
+                  <!-- <span class="linear_back_box_flx_header">Tax Advisory</span>
                                 <span class="linear_back_box_flx_subheader">Get instant tax advisory and tax reports for
                                     easy filing</span> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="linear_back_box animation" data-animation="zoomIn" data-animation-delay="0.2s">
-                        <div class="mb-4 fnt_20 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                            Peace of mind</div>
-                        <div class="d-flex" style="justify-content: space-between;">
-                            <div class="linear_back_box_flx">
-                                <img src="assets/images/security.png">
-                                <div class="list_header mt-3 mb-2">
-                                    Best Security
-                                </div>
-                                <div class="txt_wht line_height20">
-                                    All our data exchange happens through SSL
-                                    with sensitive informations protected with AES-256
-                                </div>
-                                <!-- <span class="linear_back_box_flx_header">Best Security</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="linear_back_box animation"
+              data-animation="zoomIn"
+              data-animation-delay="0.2s"
+            >
+              <div
+                class="mb-4 fnt_20 animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                Peace of mind
+              </div>
+              <div class="d-flex" style="justify-content: space-between">
+                <div class="linear_back_box_flx">
+                  <img src="assets/images/security.png" />
+                  <div class="list_header mt-3 mb-2">Best Security</div>
+                  <div class="txt_wht line_height20">
+                    All our data exchange happens through SSL with sensitive
+                    informations protected with AES-256
+                  </div>
+                  <!-- <span class="linear_back_box_flx_header">Best Security</span>
                                 <span class="linear_back_box_flx_subheader">All our data exchange happens through SSL
                                     with sensitive informations protected with AES-256 </span> -->
-                            </div>
-                            <div class="linear_back_box_flx">
-                                <img src="assets/images/audit.png" style="width: 48px;">
-                                <div class="list_header mt-3 mb-2">
-                                    Regular Audit
-                                </div>
-                                <div class="txt_wht line_height20">
-                                    Our business partners are regularly
-                                    financially audited to keep a check on bankruptcy risk and fraud
-                                </div>
-                                <!-- <span class="linear_back_box_flx_header">Regular Audit</span>
+                </div>
+                <div class="linear_back_box_flx">
+                  <img src="assets/images/audit.png" style="width: 48px" />
+                  <div class="list_header mt-3 mb-2">Regular Audit</div>
+                  <div class="txt_wht line_height20">
+                    Our business partners are regularly financially audited to
+                    keep a check on bankruptcy risk and fraud
+                  </div>
+                  <!-- <span class="linear_back_box_flx_header">Regular Audit</span>
                                 <span class="linear_back_box_flx_subheader">Our business partners are regularly
                                     financially audited to keep a check on bankruptcy risk and fraud</span> -->
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-5 col-md-12 col-sm-12">
-                    <div class="linear_back_box" style="padding: 50px 30px;">
-                        <div class="mb-5 fnt_20 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                            Educated Positions</div>
-                        <div class="d-flex" style="flex-direction: column;">
-                            <div class="linear_back_box_flx_right">
-                                <img class="mb-2" src="assets/images/project.png">
-                                <span class="list_header mt-2 mb-2 animation" data-animation="fadeInUp"
-                                    data-animation-delay="0.2s">Vetted Projects</span>
-                                <span class="animation" data-animation="fadeInUp"
-                                    data-animation-delay="0.2s">Our team of quant experts meticulously analyzes 500+
-                                    assets and protocols to bring you the best</span>
-                            </div>
-                            <div class="linear_back_box_flx_right" style="margin-top: 90px;">
-                                <img class="mb-2" src="assets/images/reward.png">
-                                <span class="list_header mb-2 mt-2 animation" data-animation="fadeInUp"
-                                    data-animation-delay="0.2s">Risk-Reward Analysis</span>
-                                <span class="animation" data-animation="fadeInUp"
-                                    data-animation-delay="0.2s">Use our AI powered risk-reward assessment tool to choose
-                                    a DeFi instrument best suited for you</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="linear_back_box" style="padding: 50px 30px">
+              <div
+                class="mb-5 fnt_20 animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                Educated Positions
+              </div>
+              <div class="d-flex" style="flex-direction: column">
+                <div class="linear_back_box_flx_right">
+                  <img class="mb-2" src="assets/images/project.png" />
+                  <span
+                    class="list_header mt-2 mb-2 animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="0.2s"
+                    >Vetted Projects</span
+                  >
+                  <span
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="0.2s"
+                    >Our team of quant experts meticulously analyzes 500+ assets
+                    and protocols to bring you the best</span
+                  >
+                </div>
+                <div class="linear_back_box_flx_right" style="margin-top: 90px">
+                  <img class="mb-2" src="assets/images/reward.png" />
+                  <span
+                    class="list_header mb-2 mt-2 animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="0.2s"
+                    >Risk-Reward Analysis</span
+                  >
+                  <span
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="0.2s"
+                    >Use our AI powered risk-reward assessment tool to choose a
+                    DeFi instrument best suited for you</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- END SECTION ABOUT US -->
 
-
     <!-- SECTION MOBILE APP -->
-    <section style="background-color: white;">
-        <div class="custom-container-simple">
-            <div class="header_txt text-center mb-5"><span class="gradient_txt">Highest quality research</span> <span
-                    style="color: black;">to lay your
-                    worries at rest </span>></div>
-            <div class="flx_cnt">
-                <div class="wdt_50">
-                    <div>
-                        <div class="list_header fnt_blck mb-4">Our expert team of analysts meticulously analyzes 500+ assets
-                            for:</div>
-                        <div class="expert_subHeader_inner">
-                            <div class="list_inner_expert">
-                                <div class="mrgn_rgt_10"><img src="assets/images/circle_green.png" style="width: 28px;">
-                                </div>
-                                <div class="animation" data-animation="fadeInUp" data-animation-delay=".2s">
-                                    <span>Performance in bear market </span>
-                                </div>
-                            </div>
-                            <div class="list_inner_expert">
-                                <div class="mrgn_rgt_10"><img src="assets/images/circle_green.png" style="width: 28px;">
-                                </div>
-                                <div class="animation" data-animation="fadeInUp" data-animation-delay=".3s">
-                                    <span>Project & token reputation</span>
-                                </div>
-                            </div>
-                            <div class="list_inner_expert">
-                                <div class="mrgn_rgt_10"><img src="assets/images/circle_green.png" style="width: 28px;">
-                                </div>
-                                <div class="animation" data-animation="fadeInUp" data-animation-delay=".4s">
-                                    <span>Best yields </span>
-                                </div>
-                            </div>
-                            <div class="list_inner_expert">
-                                <div class="mrgn_rgt_10"><img src="assets/images/circle_green.png" style="width: 28px;">
-                                </div>
-                                <div class="animation" data-animation="fadeInUp" data-animation-delay=".5s">
-                                    <span>Best security</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wdt_50">
-                    <div>
-                        <img src="assets/images/research.png" style="width: 350px;" class="animation" data-animation="zoomIn" data-animation-delay="0.2s">
-                        <div class="expert_subHeader">
-                            Access asset analysis report and get a 360 overview of the protocol, past performance and
-                            assosciated risks
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section style="background-color: white">
+      <div class="custom-container-simple">
+        <div class="header_txt text-center mb-5">
+          <span class="gradient_txt">Highest quality research</span>
+          <span style="color: black">to lay your worries at rest </span>>
         </div>
+        <div class="flx_cnt">
+          <div class="wdt_50">
+            <div>
+              <div class="list_header fnt_blck mb-4">
+                Our expert team of analysts meticulously analyzes 500+ assets
+                for:
+              </div>
+              <div class="expert_subHeader_inner">
+                <div class="list_inner_expert">
+                  <div class="mrgn_rgt_10">
+                    <img
+                      src="assets/images/circle_green.png"
+                      style="width: 28px"
+                    />
+                  </div>
+                  <div
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".2s"
+                  >
+                    <span>Performance in bear market </span>
+                  </div>
+                </div>
+                <div class="list_inner_expert">
+                  <div class="mrgn_rgt_10">
+                    <img
+                      src="assets/images/circle_green.png"
+                      style="width: 28px"
+                    />
+                  </div>
+                  <div
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".3s"
+                  >
+                    <span>Project & token reputation</span>
+                  </div>
+                </div>
+                <div class="list_inner_expert">
+                  <div class="mrgn_rgt_10">
+                    <img
+                      src="assets/images/circle_green.png"
+                      style="width: 28px"
+                    />
+                  </div>
+                  <div
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".4s"
+                  >
+                    <span>Best yields </span>
+                  </div>
+                </div>
+                <div class="list_inner_expert">
+                  <div class="mrgn_rgt_10">
+                    <img
+                      src="assets/images/circle_green.png"
+                      style="width: 28px"
+                    />
+                  </div>
+                  <div
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay=".5s"
+                  >
+                    <span>Best security</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wdt_50">
+            <div>
+              <img
+                src="assets/images/research.png"
+                style="width: 350px"
+                class="animation"
+                data-animation="zoomIn"
+                data-animation-delay="0.2s"
+              />
+              <div class="expert_subHeader">
+                Access asset analysis report and get a 360 overview of the
+                protocol, past performance and assosciated risks
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- END SECTION MOBILE APP -->
 
-
     <!-- SECTION MOBILE APP -->
-    <section class="section_gap_white_black" style="background-color: white;padding-top: 0px !important;">
-        <div class="custom-container-simple">
-            <div class="header_txt text-center mb-5"><span class="gradient_txt">Globally </span> <span
-                    style="color: black;">Compliant</span>></div>
-            <div class="flx_cnt">
-                <div class="wdt_50">
-                    <div>
-                        <div class="list_header fnt_blck animation mb-1" data-animation="fadeInUp" data-animation-delay=".2s">KYC & AML + CFT</div>
-                        <div class="expert_subHeader_inner animation" data-animation="fadeInUp" data-animation-delay=".2s">Robust KYC and AML checks to ensure that there are
-                            no
-                            regulatory hassles</div>
-                        <div class="mt-3">
-                            <div class="list_header fnt_blck animation mb-1" data-animation="fadeInUp" data-animation-delay=".3s">Tax Reporting</div>
-                            <div class="expert_subHeader_inner">
-                                <ul>
-                                    <li class="expert_subHeader_inner animation" data-animation="fadeInUp" data-animation-delay=".4s">Get instant tax advisory with each transaction</li>
-                                    <li class="expert_subHeader_inner animation" data-animation="fadeInUp" data-animation-delay=".5s">Generate a report with us for relaxed tax filing</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wdt_50">
-                    <img src="assets/images/globe.png" style="width: 400px;" class="animation" data-animation="zoomIn" data-animation-delay="0.2s">
-                </div>
-            </div>
+    <section
+      class="section_gap_white_black"
+      style="background-color: white; padding-top: 0px !important"
+    >
+      <div class="custom-container-simple">
+        <div class="header_txt text-center mb-5">
+          <span class="gradient_txt">Globally </span>
+          <span style="color: black">Compliant</span>>
         </div>
+        <div class="flx_cnt">
+          <div class="wdt_50">
+            <div>
+              <div
+                class="list_header fnt_blck animation mb-1"
+                data-animation="fadeInUp"
+                data-animation-delay=".2s"
+              >
+                KYC & AML + CFT
+              </div>
+              <div
+                class="expert_subHeader_inner animation"
+                data-animation="fadeInUp"
+                data-animation-delay=".2s"
+              >
+                Robust KYC and AML checks to ensure that there are no regulatory
+                hassles
+              </div>
+              <div class="mt-3">
+                <div
+                  class="list_header fnt_blck animation mb-1"
+                  data-animation="fadeInUp"
+                  data-animation-delay=".3s"
+                >
+                  Tax Reporting
+                </div>
+                <div class="expert_subHeader_inner">
+                  <ul>
+                    <li
+                      class="expert_subHeader_inner animation"
+                      data-animation="fadeInUp"
+                      data-animation-delay=".4s"
+                    >
+                      Get instant tax advisory with each transaction
+                    </li>
+                    <li
+                      class="expert_subHeader_inner animation"
+                      data-animation="fadeInUp"
+                      data-animation-delay=".5s"
+                    >
+                      Generate a report with us for relaxed tax filing
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wdt_50">
+            <img
+              src="assets/images/globe.png"
+              style="width: 400px"
+              class="animation"
+              data-animation="zoomIn"
+              data-animation-delay="0.2s"
+            />
+          </div>
+        </div>
+      </div>
     </section>
     <!-- END SECTION MOBILE APP -->
 
     <!-- START CLIENTS SECTION -->
     <section class="section_gap_white_black client_logo small_pt small_pb">
-        <div class="custom-container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title_default_light title_border text-center">
-                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Partners</h4>
-                    </div>
-                </div>
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title_default_light title_border text-center">
+              <h4
+                class="animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                Partners
+              </h4>
             </div>
-            <div class="row align-items-center text-center overflow_hide small_space">
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.3s">
-                        <img src="assets/images/logo1.png" alt="client_logo_wt1" />
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.4s">
-                        <img src="assets/images/logo2.png" alt="client_logo_wt2" />
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.5s">
-                        <img src="assets/images/logo3.png" alt="client_logo_wt3" />
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.6s">
-                        <img src="assets/images/logo4.png" alt="client_logo_wt4" />
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.7s">
-                        <img src="assets/images/client_logo_wt5.png" alt="client_logo_wt5" />
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.8s">
-                        <img src="assets/images/client_logo_wt6.png" alt="client_logo_wt6" />
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.8s">
-                        <img src="assets/images/client_logo_wt7.png" alt="client_logo_wt7" />
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 logo_border">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
-                        data-animation="fadeInUp" data-animation-delay="0.8s">
-                        <img src="assets/images/client_logo_wt8.png" alt="client_logo_wt8" />
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div
+          class="row align-items-center text-center overflow_hide small_space"
+        >
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.3s"
+            >
+              <img src="assets/images/logo1.png" alt="client_logo_wt1" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.4s"
+            >
+              <img src="assets/images/logo2.png" alt="client_logo_wt2" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.5s"
+            >
+              <img src="assets/images/logo3.png" alt="client_logo_wt3" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.6s"
+            >
+              <img src="assets/images/logo4.png" alt="client_logo_wt4" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.7s"
+            >
+              <img
+                src="assets/images/client_logo_wt5.png"
+                alt="client_logo_wt5"
+              />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.8s"
+            >
+              <img
+                src="assets/images/client_logo_wt6.png"
+                alt="client_logo_wt6"
+              />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.8s"
+            >
+              <img
+                src="assets/images/client_logo_wt7.png"
+                alt="client_logo_wt7"
+              />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 logo_border">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center h-100 animation"
+              data-animation="fadeInUp"
+              data-animation-delay="0.8s"
+            >
+              <img
+                src="assets/images/client_logo_wt8.png"
+                alt="client_logo_wt8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- END CLIENTS SECTION -->
 
     <!-- START SECTION CONTACT -->
 
     <section id="investment" class="small_pt">
-        <div class="custom-container">
-            <div class="earlyAccess_backgrnd">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
-                        <div class="earlyaccess_subHeader">
-                            Can't wait to participate in DeFi earnings?
-                        </div>
-                        <div class="mt-2">
-                            Signup for our beta to get early access and exclusive rewards.
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="text_md_center">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="Enter email">
-                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                        placeholder="Password">
-                                </div>
-
-                                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                                <div class="btn_group pt-2 pb-3 animation" data-animation="fadeInUp"
-                                    data-animation-delay="1.4s">
-                                    <a href="#whitepaper" class="btn btn-default btn-radius nav-link content-popup">Get
-                                        Early
-                                        Access</a>
-                                    <!-- <a href="#" class="btn btn-border btn-radius">Buy Token Now! <i class="ion-ios-arrow-thin-right"></i></a> -->
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="earlyAccess_black">
-                            Start earning daily interests with as little as $100!
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="earlyAccess_black">
-                            Exit anytime and transfer/liquidate your assets easily.
-                        </div>
-                    </div>
-                </div>
+      <div class="custom-container">
+        <div class="earlyAccess_backgrnd">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
+              <div class="earlyaccess_subHeader">
+                Can't wait to participate in DeFi earnings?
+              </div>
+              <div class="mt-2">
+                Signup for our beta to get early access and exclusive rewards.
+              </div>
             </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="text_md_center">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+
+                  <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                  <div
+                    class="btn_group pt-2 pb-3 animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="1.4s"
+                  >
+                    <a
+                      href="#whitepaper"
+                      class="btn btn-default btn-radius nav-link content-popup"
+                      >Get Early Access</a
+                    >
+                    <!-- <a href="#" class="btn btn-border btn-radius">Buy Token Now! <i class="ion-ios-arrow-thin-right"></i></a> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="earlyAccess_black">
+                <div> <img src="assets/images/circle_green.png" class="ern_img"></div>
+                <div> Start earning daily interests with as little as $100!</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="earlyAccess_black">
+                <img src="assets/images/circle_green.png" class="ern_img">
+                Exit anytime and transfer/liquidate your assets easily.
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- END SECTION CONTACT -->
 
     <!-- START FOOTER SECTION -->
     <footer>
-        <div class="top_footer bg_light_dark" data-z-index="1" data-parallax="scroll"
-            data-image-src="assets/images/footer_bg.png">
-            <div class="custom-container-footer">
-                <div class="row">
-                    <div class="col-lg-3 col-md-12">
-                        <div class="footer_logo mb-3 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                            <a href="#home_section" class="page-scroll">
-                                <img alt="logo" src="assets/images/logo.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 res_md_mt_30 res_sm_mt_20">
-                        <h4 class="footer_title border_title animation" data-animation="fadeInUp"
-                            data-animation-delay="0.2s">Contact us</h4>
-                        <ul class="footer_link list_arrow">
-                            <li class="animation" data-animation="fadeInUp" data-animation-delay="0.2s"><a
-                                    href="#">support@rivera.money</a></li>
-                            <li class="animation" data-animation="fadeInUp" data-animation-delay="0.3s"><a href="#">+91 12345 12345</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 res_md_mt_30 res_sm_mt_20">
-                        <div class="newsletter_form">
-                            <h4 class="footer_title border_title animation" data-animation="fadeInUp"
-                                data-animation-delay="0.2s">Know more</h4>
-                            
-                                <ul class="footer_link list_arrow">
-                                    <li class="animation" data-animation="fadeInUp" data-animation-delay="0.2s"><a
-                                            href="#">FAQs</a></li>
-                                    <li class="animation" data-animation="fadeInUp" data-animation-delay="0.3s"><a href="#">Blog</a></li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
-                        <div class="footer_logo mb-3 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                           <div style="    display: flex;
-                           justify-content: space-around;">
-                               <div><img class="wdth_50" src="assets/images/insta.png"></div>
-                               <div><img class="wdth_50" src="assets/images/linknd.png"></div>
-                               <div><img class="wdth_50" src="assets/images/twitter.png"></div>
-                           </div>
-                        </div>
-                    </div>
-                </div>
+      <div
+        class="top_footer bg_light_dark"
+        data-z-index="1"
+        data-parallax="scroll"
+        data-image-src="assets/images/footer_bg.png"
+      >
+        <div class="custom-container-footer">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <div
+                class="footer_logo mb-3 animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                <a href="#home_section" class="page-scroll">
+                  <img alt="logo" src="assets/images/logo.png" />
+                </a>
+              </div>
             </div>
+            <div class="col-lg-3 col-md-6 res_md_mt_30 res_sm_mt_20">
+              <h4
+                class="footer_title border_title animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                Contact us
+              </h4>
+              <ul class="footer_link list_arrow">
+                <li
+                  class="animation"
+                  data-animation="fadeInUp"
+                  data-animation-delay="0.2s"
+                >
+                  <a href="#">support@rivera.money</a>
+                </li>
+                <li
+                  class="animation"
+                  data-animation="fadeInUp"
+                  data-animation-delay="0.3s"
+                >
+                  <a href="#">+91 12345 12345</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 res_md_mt_30 res_sm_mt_20">
+              <div class="newsletter_form">
+                <h4
+                  class="footer_title border_title animation"
+                  data-animation="fadeInUp"
+                  data-animation-delay="0.2s"
+                >
+                  Know more
+                </h4>
+
+                <ul class="footer_link list_arrow">
+                  <li
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="0.2s"
+                  >
+                    <a href="#">FAQs</a>
+                  </li>
+                  <li
+                    class="animation"
+                    data-animation="fadeInUp"
+                    data-animation-delay="0.3s"
+                  >
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div
+                class="footer_logo mb-3 animation"
+                data-animation="fadeInUp"
+                data-animation-delay="0.2s"
+              >
+                <div style="display: flex; justify-content: space-around">
+                  <div>
+                    <img class="wdth_50" src="assets/images/insta.png" />
+                  </div>
+                  <div>
+                    <img class="wdth_50" src="assets/images/linknd.png" />
+                  </div>
+                  <div>
+                    <img class="wdth_50" src="assets/images/twitter.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <div class="bottom_footer">
+      </div>
+      <!-- <div class="bottom_footer">
             <div class="custom-container">
                 <div class="row">
                     <div class="col-md-6">
@@ -1029,39 +1619,34 @@
 
     <script src="assets/js/rellax.min.js"></script>
     <script>
-        var rellax = new Rellax('.rellax', {
-            center: true
-        });
-        var rellaxNonCentered = new Rellax('.rellax-non-centered', {
-            center: false
-        });
+      var rellax = new Rellax(".rellax", {
+        center: true,
+      });
+      var rellaxNonCentered = new Rellax(".rellax-non-centered", {
+        center: false,
+      });
     </script>
 
     <script type="text/javascript">
+      // var frame = document.getElementById("grwth_back_img");
+      // var frameDoc = frame.contentDocument;
+      // var info = document.getElementById("info");
 
+      // var target = frameDoc.getElementById("overview");
+      // frameDoc.scrollingElement.scrollTop = target.offsetTop;
 
-
-        // var frame = document.getElementById("grwth_back_img");
-        // var frameDoc = frame.contentDocument;
-        // var info = document.getElementById("info");
-
-        // var target = frameDoc.getElementById("overview");
-        // frameDoc.scrollingElement.scrollTop = target.offsetTop;
-
-        var parallax_offset = document.getElementById("parallax_offset");
-        var grwth_back_img = document.getElementById("grwth_back_img");
-        var grwth_back = document.getElementById("grwth_back");
-        window.addEventListener("scroll", function () {
-            var offset = window.pageYOffset;
-            console.log("offset", offset);
-            console.log("grwth_back", grwth_back.scrollTop);
-            parallax_offset.style.backgroundPositionY = offset * -1.2 + "px";
-            //grwth_back_img.style.backgroundPositionY = grwth_back * -1.2 + "px";
-            //grwth_back.style.backgroundPositionY = grwth_back_img * -1.2 + "px";
-        });
-
+      var parallax_offset = document.getElementById("parallax_offset");
+      var grwth_back_img = document.getElementById("grwth_back_img");
+      var grwth_back = document.getElementById("grwth_back");
+      window.addEventListener("scroll", function () {
+        var offset = window.pageYOffset;
+        console.log("offset", offset);
+        console.log("grwth_back", grwth_back.scrollTop);
+        parallax_offset.style.backgroundPositionY = offset * -1.2 + "px";
+        //grwth_back_img.style.backgroundPositionY = grwth_back * -1.2 + "px";
+        //grwth_back.style.backgroundPositionY = grwth_back_img * -1.2 + "px";
+      });
     </script>
-
 
     <!-- <script type="text/javascript">
         $(document).on("ready", function() {
@@ -1077,6 +1662,5 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="assets/js/mouseleave.js"></script>
-</body>
-
+  </body>
 </html>
