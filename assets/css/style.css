@@ -197,7 +197,7 @@ button {
   color: #ffffff;
   cursor: pointer;
   padding: 10px 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   transition: all 0.5s ease 0s;
 }
 
@@ -845,19 +845,19 @@ button:focus {
 
 .btn {
   border: 0 none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
   height: 48px;
   line-height: 48px;
   padding: 0 25px;
   position: relative;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   vertical-align: middle;
 }
 
 .btn.btn-radius {
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .btn span {
@@ -970,7 +970,7 @@ button:focus {
   border: 0;
   color: #fff;
   outline: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   z-index: 2;
   transition: all 0.5s ease 0s;
 }
@@ -1013,7 +1013,7 @@ button:focus {
   border: 0;
   color: #fff;
   outline: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   z-index: 2;
 }
 
@@ -1441,7 +1441,7 @@ header a:hover,
 }
 
 .navbar-expand-lg .nav_btn > li {
-  margin-left: 15px;
+  margin-left: 30px;
   padding: 0;
 }
 
@@ -8168,7 +8168,14 @@ html.w-mod-touch * {
   font-size: 30px;
   font-weight: bold;
   color: white;
-  line-height: 50px;
+  line-height: 40px;
+}
+
+.section_subheader {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
 }
 
 .earlyAccess_black {
@@ -8402,12 +8409,12 @@ html.w-mod-touch * {
   /* background: linear-gradient(to top,#1c0522,transparent); */
   /* background: linear-gradient(180.43deg, #0F1113 12.41%, #DFEFFF 22.75%, #FCFDFF 78.21%, #000000 95.16%);; */
   /* background: linear-gradient(180.43deg, black 10.41%, white 100.75%, #FCFDFF 56.21%, #000000 103.16%); */
-  background: linear-gradient(
+  background:linear-gradient(
     360.43deg,
-    white 11.41%,
+    white 28.41%,
     black 100.75%,
-    white 53.21%,
-    white 133.16%
+    white 24.21%,
+    white 100.16%
   );
   z-index: 1000;
 }
@@ -8446,8 +8453,8 @@ html.w-mod-touch * {
 .wdt_50 {
   width: 50%;
 }
-.text-md-80 {
-  width: 80%;
+.text-md-60 {
+  width: 60%;
   margin: auto;
 }
 .wdth_50 {
@@ -8456,6 +8463,10 @@ html.w-mod-touch * {
 .flex_cnt {
   display: flex;
   justify-content: space-evenly;
+}
+.flex_cnt_lrn {
+  display: flex;
+  justify-content: space-around;
 }
 .stack_first {
   width: 30%;
@@ -8466,13 +8477,13 @@ html.w-mod-touch * {
     rgba(150, 67, 228, 0) 53.32%
   );
   border: 2px solid #ffffff;
-  padding: 30px;
+  padding: 60px 50px 40px;
 }
 .stack_second {
   width: 30%;
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.25);
-  padding: 30px;
+  padding: 60px 50px 40px;
 }
 .return_second {
   width: 30%;
@@ -8503,7 +8514,7 @@ html.w-mod-touch * {
   width: 30%;
   text-align: center;
   /* background: #282e3a; */
-  padding: 30px;
+  padding: 10px;
   border-radius: 20px;
 }
 .learn_section {
@@ -8627,7 +8638,7 @@ html.w-mod-touch * {
   transform-style: preserve-3d;
   padding: 30px 0px;
   border-radius: 20px;
-  min-height: 280px;
+  min-height: 334px;
   }
 /* new flip design end */
 
@@ -8643,4 +8654,20 @@ html.w-mod-touch * {
 .ern_img{
   width: 18px;
     margin-right: 5px;
+}
+.stck_btn{
+  padding: 0 40px;
+}
+.mh_60{
+  min-height: 60px;
+}
+
+.txt_algn_lft {
+  text-align: left;
+}
+.flt_lft{
+  float: left;
+}
+.mt_4rm{
+  margin-top: 4rem;
 }
