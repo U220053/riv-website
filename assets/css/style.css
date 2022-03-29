@@ -962,11 +962,11 @@ button:focus {
   background-size: 200% auto;
   background-image: -webkit-linear-gradient(
     left,
-    #ff67cb 0%,
-    #ffcc67 51%,
-    #ff67cb
+    #55adff 0%, #a528dd 51%, #55adff
   );
-  background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 51%, #ff67cb);
+  /* background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 51%, #ff67cb); */
+  background-image: linear-gradient(to right, #55adff 0%, #a528dd 51%, #55adff);
+  /* background: linear-gradient(96.3deg, #55adff 3.46%, #a528dd 118.55%); */
   border: 0;
   color: #fff;
   outline: none;
@@ -8175,7 +8175,7 @@ html.w-mod-touch * {
   font-size: 36px;
   font-weight: bold;
   color: white;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 .earlyAccess_black {
@@ -8436,7 +8436,7 @@ html.w-mod-touch * {
 .expert_subHeader {
   /* width: 60%; */
   line-height: normal;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   font-weight: 600;
 }
@@ -8477,13 +8477,13 @@ html.w-mod-touch * {
     rgba(150, 67, 228, 0) 53.32%
   );
   border: 2px solid #ffffff;
-  padding: 60px 50px 40px;
+  padding: 60px 40px 40px;
 }
 .stack_second {
   width: 30%;
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.25);
-  padding: 60px 50px 40px;
+  padding: 60px 40px 40px;
 }
 .return_second {
   width: 30%;
@@ -8614,6 +8614,7 @@ html.w-mod-touch * {
   -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   background: white;
+  text-align: left;
   /* -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
   -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
   box-shadow: 5px 7px 9px -4px rgb(158, 158, 158); */
@@ -8646,7 +8647,7 @@ html.w-mod-touch * {
   height: 36px;
   display: flex;
   align-items: center;
-  font-size: 10px;
+  font-size: 14px;
   border-radius: 10px !important;
   background: linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%);
 }

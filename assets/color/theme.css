@@ -99,8 +99,9 @@ header a:hover,
 }
 
 .btn-default {
-    background-image: -webkit-linear-gradient(left, #ff67cb 0%, #ffcc67 51%, #ff67cb);
-    background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 51%, #ff67cb);
+    background-image: -webkit-linear-gradient(left, #55adff 0%, #a528dd 51%, #55adff);
+    /* background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 51%, #ff67cb); */
+    background-image: linear-gradient(to right, #55adff 0%, #a528dd 51%, #55adff);
 }
 
 .btn-default.active.focus,
@@ -114,8 +115,8 @@ header a:hover,
 .btn-default:focus,
 .btn.active:not(:disabled):not(.disabled),
 .btn:active:not(:disabled):not(.disabled) {
-    background-image: -webkit-linear-gradient(left, #ffcc67 0%, #ff67cb 51%, #ffcc67);
-    background-image: linear-gradient(to right, #ffcc67 0%, #ff67cb 51%, #ffcc67);
+    background-image: -webkit-linear-gradient(left, #a528dd 0%, #55adff 51%, #a528dd);
+    background-image: linear-gradient(to right, #a528dd 0%, #55adff 51%, #a528dd);
 }
 
 .btn-border,
