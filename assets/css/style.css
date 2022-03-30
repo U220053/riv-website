@@ -8672,3 +8672,51 @@ html.w-mod-touch * {
 .mt_4rm{
   margin-top: 4rem;
 }
+
+/* On screens that are 992px or less, set the background color to olive */
+@media screen and (max-width: 992px) {
+  .stack_first{
+    width: unset;
+    margin: 50px;
+  }
+  .stack_second{
+    width: unset;
+    margin: 50px;
+  }
+  .return_section{
+    width: unset;
+  }
+  .flex_cnt{
+    flex-direction: column;
+  }
+  .gateway_section{
+    width: 300px;
+    margin: auto;
+  }
+  .flx_cnt{
+    flex-direction: column-reverse;
+  }
+  .wdt_res{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .flex_cnt_lrn {
+    flex-direction: column;
+  }
+  .wdt_res80{
+    width: 80%;
+  }
+  .wdt_res90{
+    width: 90%;
+  }
+  .mycustom {
+    width: 330px;
+  }
+  .earlyAccess_backgrnd {
+    margin: 40px;
+  }
+  .mb_15_res{
+    margin-bottom: 15px;
+  }
+}
