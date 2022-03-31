@@ -8724,7 +8724,8 @@ html.w-mod-touch * {
     width: 330px;
   }
   .earlyAccess_backgrnd {
-    margin: 40px;
+    margin: 20px;
+    padding: 30px;
   }
   .mb_15_res{
     margin-bottom: 15px;
@@ -8759,5 +8760,24 @@ html.w-mod-touch * {
 }
 .mycustom .input-group-prepend {
   top: 4px;
+}
+.header_txt{
+  font-size: 36px;
+}
+.section_subheader{
+  font-size: 25px;
+  line-height: 35px;
+}
+.right_border {
+  border-right: none;
+  padding-right: unset;
+}
+.sub_header_txt {
+  font-size: 22px;
+  line-height: 30px;
+}
+.section_subheader_res{
+  width: 90%;
+    margin: auto;
 }
 }
