@@ -8672,6 +8672,16 @@ html.w-mod-touch * {
 .mt_4rm{
   margin-top: 4rem;
 }
+.ftr_pos{
+  display: flex; 
+  justify-content: space-around;
+}
+.header_wrap {
+  padding: 15px 22px;
+}
+.mt_20{
+  margin-top: 20px;
+}
 
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 992px) {
@@ -8719,4 +8729,35 @@ html.w-mod-touch * {
   .mb_15_res{
     margin-bottom: 15px;
   }
+  .earlyAccess_black {
+    width: 100%;
+  }
+  .mb_20_res{
+    margin-bottom: 20px;
+  }
+  .text-md-60{
+    width: 80%;
+  }
+  .hrd_section_res{
+    width: 80%;
+    margin: auto;
+  }
+  .learn_section{
+    width: unset;
+  }
+  .mb_80_res{
+    margin-bottom: 80px;
+  }
+  .custom-container-footer {
+    padding: 0px 10% 50px;
+}
+.mt_20_res{
+  margin-top: 20px;
+}
+.ftr_pos{
+  justify-content: space-between;
+}
+.mycustom .input-group-prepend {
+  top: 4px;
+}
 }
