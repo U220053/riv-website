@@ -8457,6 +8457,10 @@ html.w-mod-touch * {
   width: 60%;
   margin: auto;
 }
+.text-md-80 {
+  width: 80%;
+  margin: auto;
+}
 .wdth_50 {
   width: 50px;
 }
