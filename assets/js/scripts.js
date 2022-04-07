@@ -375,9 +375,9 @@ Version      : 1.6
     /*===================================*
      09. VIDEO JS
     *===================================*/
-    $('.video').magnificPopup({
-        type: 'iframe'
-    });
+    // $('.video').magnificPopup({
+    //     type: 'iframe'
+    // });
 
     /*===================================*
     10. CONTACT FORM JS
@@ -434,11 +434,11 @@ Version      : 1.6
     /*===================================*
     12. POPUP JS
     *===================================*/
-    $('.content-popup').magnificPopup({
-        type: 'inline',
-        preloader: true,
-        mainClass: 'mfp-zoom'
-    });
+    // $('.content-popup').magnificPopup({
+    //     type: 'inline',
+    //     preloader: true,
+    //     mainClass: 'mfp-zoom'
+    // });
 
     /*===================================*
     13. ANIMATION JS
@@ -487,201 +487,34 @@ Version      : 1.6
 
     /*===================================*
     15. COLOR SWITCHHER JS
-    *===================================*/
-    $(".color-switch").on("click", "button", function() {
+    // *===================================*/
+    // $(".color-switch").on("click", "button", function() {
 
-        $(this).addClass("active").siblings().removeClass("active");
-        $("#layoutstyle").attr("href", "assets/color/" + $(this).val() + ".css");
+    //     $(this).addClass("active").siblings().removeClass("active");
+    //     $("#layoutstyle").attr("href", "assets/color/" + $(this).val() + ".css");
 
-    });
+    // });
 
-    $(".icon").on("click", function() {
-        $(".color-switch").toggleClass("switch-active");
-        $(this).toggleClass("switch-active");
-    });
+    // $(".icon").on("click", function() {
+    //     $(".color-switch").toggleClass("switch-active");
+    //     $(this).toggleClass("switch-active");
+    // });
 
-    $(function() {
-        $('#doc_select').change(function() {
-            $('.document_tab .tab-pane').removeClass('show active');
-            $('#' + $(this).val()).addClass('show active');
-        });
-    });
+    // $(function() {
+    //     $('#doc_select').change(function() {
+    //         $('.document_tab .tab-pane').removeClass('show active');
+    //         $('#' + $(this).val()).addClass('show active');
+    //     });
+    // });
 
-    google.maps.event.addDomListener(window, 'load', init);
+   // google.maps.event.addDomListener(window, 'load', init);
 
-    function init() {
-        // Basic options for a simple Google Map
-        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-        var mapOptions = {
-            // How zoomed in you want the map to start at (always required)
-            zoom: 12,
-
-            // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(40.7020, -73.9220), // New York
-
-            // How you would like to style the map. 
-            // This is where you would paste any style found on Snazzy Maps.
-            styles: [{
-                "featureType": "all",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "weight": "2.00"
-                }]
-            }, {
-                "featureType": "all",
-                "elementType": "geometry.stroke",
-                "stylers": [{
-                    "color": "#9c9c9c"
-                }]
-            }, {
-                "featureType": "all",
-                "elementType": "labels.text",
-                "stylers": [{
-                    "visibility": "on"
-                }]
-            }, {
-                "featureType": "landscape",
-                "elementType": "all",
-                "stylers": [{
-                    "color": "#f2f2f2"
-                }]
-            }, {
-                "featureType": "landscape",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#ffffff"
-                }]
-            }, {
-                "featureType": "landscape.man_made",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#ffffff"
-                }]
-            }, {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            }, {
-                "featureType": "road",
-                "elementType": "all",
-                "stylers": [{
-                    "saturation": -100
-                }, {
-                    "lightness": 45
-                }]
-            }, {
-                "featureType": "road",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#eeeeee"
-                }]
-            }, {
-                "featureType": "road",
-                "elementType": "labels.text.fill",
-                "stylers": [{
-                    "color": "#7b7b7b"
-                }]
-            }, {
-                "featureType": "road",
-                "elementType": "labels.text.stroke",
-                "stylers": [{
-                    "color": "#ffffff"
-                }]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "all",
-                "stylers": [{
-                    "visibility": "simplified"
-                }]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "labels.icon",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            }, {
-                "featureType": "transit",
-                "elementType": "all",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            }, {
-                "featureType": "water",
-                "elementType": "all",
-                "stylers": [{
-                    "color": "#46bcec"
-                }, {
-                    "visibility": "on"
-                }]
-            }, {
-                "featureType": "water",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#c8d7d4"
-                }]
-            }, {
-                "featureType": "water",
-                "elementType": "labels.text.fill",
-                "stylers": [{
-                    "color": "#070707"
-                }]
-            }, {
-                "featureType": "water",
-                "elementType": "labels.text.stroke",
-                "stylers": [{
-                    "color": "#ffffff"
-                }]
-            }]
-        };
-
-        // Get the HTML DOM element that will contain your map 
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
-
-        // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
-
-        // Let's also add a marker while we're at it
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.7020, -73.9220),
-            map: map,
-            icon: "assets/images/marker.png",
-            title: 'Snazzy!'
-        });
-    }
-
-    /*Demo js*/
-    $(window).on("load", function() {
-        document.onkeydown = function(e) {
-            if (e.keyCode == 123) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-                return false;
-            }
-
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-                return false;
-            }
-        }
-
-        $("html").on("contextmenu", function() {
-            return false;
-        });
-    });
+ 
 
 })(jQuery);
 
-$(document).ready(function() {
-    $(window).on("load", function() {
-        $('body').prepend('<a href="https://www.designnominees.com/themes/cryptocash-ico-cryptocurrency-ico-landing-page-html-template" title="Design Nominees" style="width:70px;height:130px;position:fixed;top:0;right:0px;z-index:99999;text-indent:-9999px;background: url(https://www.designnominees.com/ribbons/designnominees-ribbon-blue-right.png) no-repeat;" target="_blank">Design Nominees</a> ');
-    });
-});
+// $(document).ready(function() {
+//     $(window).on("load", function() {
+//         $('body').prepend('<a href="https://www.designnominees.com/themes/cryptocash-ico-cryptocurrency-ico-landing-page-html-template" title="Design Nominees" style="width:70px;height:130px;position:fixed;top:0;right:0px;z-index:99999;text-indent:-9999px;background: url(https://www.designnominees.com/ribbons/designnominees-ribbon-blue-right.png) no-repeat;" target="_blank">Design Nominees</a> ');
+//     });
+// });

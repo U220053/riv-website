@@ -1341,7 +1341,7 @@
     .newsletter_form button {
         padding: 8px 20px;
         right: 6px;
-        top: 5px;
+        /* top: 5px; */
     }
     .team_info h4 a,
     .footer_title,

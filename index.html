@@ -10,13 +10,15 @@
       content="Cryptocash is Professional Creative Template"
     /> -->
     <!-- SITE TITLE -->
-    <title>Rivera</title>
+    <title>Rivera | Get started with Crypto Earning</title>
+    <meta name="description"
+    content="Invest in DeFi market with a click and earn industry leading returns on your investment">
     <!-- Favicon Icon -->
-    <link
+    <!-- <link
       rel="shortcut icon"
       type="image/x-icon"
       href="assets/images/favicon.png"
-    />
+    /> -->
     <!-- Animation CSS -->
     <link rel="stylesheet" href="assets/css/animate.css" />
     <!-- Latest Bootstrap min CSS -->
@@ -239,22 +241,29 @@
                 data-animation="fadeInDown"
                 data-animation-delay="1.9s"
               >
-              Blogs
+              <a target="blank"
+              href="https://medium.com/rivera-money"
+             class="anchar_hvr"
+              >Blogs</a>    
+              
               <img src="assets/images/Blog.png" style="width: 14px;">
               </li>
-              <li
+              <!-- <li
                 class="animation"
                 data-animation="fadeInDown"
                 data-animation-delay="2s"
               >
               FAQs         
-              </li>
+              </li> -->
               <li
               class="animation"
               data-animation="fadeInDown"
               data-animation-delay="2s"
             >
-            Get Early Access         
+            <a
+            href="#earlyAccess"
+           class="anchar_hvr"
+            >Get Early Access</a>       
             </li>
             </ul>
           </div>
@@ -283,7 +292,7 @@
                 <!-- <strong>DeFi</strong> bridge for <br> traditional <strong>investors</strong> -->
               </h1>
               <div>
-                Built for crypto newbies. Invest in DeFi with a click <br> and make industry leading returns.
+                Invest in DeFi market with a click and earn industry <br> leading returns on your investment. 
               </div>
               <div
                 class="btn_group pt-2 pb-3 mt-4"
@@ -297,7 +306,7 @@
             </div>
           </div>
           <div class="col-lg-5 col-md-12 col-sm-12 order-first">
-            <div style="width: 100%;">
+            <div style="width: 100%;margin-left: 15px;">
               <img src="assets/images/hero_side.png" style="width: 100%;">
             </div>
           </div>
@@ -505,32 +514,54 @@ We are building an all-in-one mobile app for all your DeFi needs.
             Join our mailing list to get latest updates on DeFi industry and how it works.
           </div>
           <div class="button_align">
-            <div>
+            <!-- <div>
               <button class="btn transparent_btn">Read FAQ’s</button>
-            </div>
+            </div> -->
             <div>
-              <button class="btn transparent_btn">Visit Blog</button>
+              <button class="btn transparent_btn" onclick="visitBlog()">Visit Blog</button>
             </div>
           </div>
         </div>
         <div class="learn_section" style="margin: auto 0;">
-          <form class="mb_80_res">
-            <div class="col-lg-10 col-sm-12 mb-3">
-              <div class="input-group mycustom">
-                <input
-                  type="text"
-                  class="form-control rounded-0"
-                  id="validationDefaultUsername"
-                  placeholder="Username"
-                  aria-describedby="inputGroupPrepend2"
-                  required
-                />
-                <div class="input-group-prepend">
-                  <button class="btn btn_sbmt_back">Subscribe</button>
+
+          <!-- <form class="newsletter_form" id="newsletter_form_submit">
+            <div class="form-group">
+                <label for="">Subscribe to our newsletter</label>
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <img src="/img/icons/email.svg" width="20px" alt="">
+                        </span>
+                    </div>
+                    <input type="email" id="newsletter_email" class="form-control" placeholder="Enter your email ID" required>
                 </div>
-              </div>
             </div>
-          </form>
+            <button type="submit" name="submit" id="submit" class="">
+                Submit
+            </button>
+            <br>
+            <p id="showMsg" class="mb-0"></p>
+        </form> -->
+
+        <form class="mb_80_res newsletter_form" id="newsletter_form_submit">
+          <div class="col-lg-10 col-sm-12 mb-3">
+            <div class="input-group mycustom">
+              <input
+                type="email"
+                class="form-control rounded-0"
+                id="newsletter_email"
+                placeholder="Username"
+                aria-describedby="inputGroupPrepend2"
+                required
+              />
+              <div class="input-group-prepend">
+                <button class="btn btn-default btn-radius nav-link btn_sbmt_back" type="submit" name="submit" id="submit">Subscribe</button>
+              </div>
+              <br>
+              <p id="showMsg" style="font-size: 14px;" class="mb-0 mt-2"><img src="assets/images/subscribe_tick.svg" class="tick_wdt">Thank you for subscribing.</p>
+            </div>
+          </div>
+        </form>
         </div>
       </div>
     </section>
@@ -1345,38 +1376,36 @@ We are building an all-in-one mobile app for all your DeFi needs.
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
               <div>
-                <form>
+                <form class="early_access_form" id="early_access_form_submit">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email ID</label>
+                    <label for="early_access_mail">Email ID</label>
                     <input
                       type="email"
                       class="form-control"
-                      id="exampleInputEmail1"
+                      id="early_access_mail"
                       aria-describedby="emailHelp"
                       placeholder="Enter email"
+                      required
                     />
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Mobile number</label>
-                    <input
-                      type="password"
+                    <label for="early_access_password">Mobile number</label>
+                    <input onkeypress="return isNumber(event);"
+                      type="text"
                       class="form-control"
-                      id="exampleInputPassword1"
+                      id="early_access_password"
                       placeholder="Password"
+                      maxlength="14"
+                      minlength="8"
+                      required
+                      ondrop="return false;" onpaste="return false;"
                     />
                   </div>
-
-                  <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                  <div
-                    class="btn_group pt-3 pb-3"
-                  >
-                    <a
-                      href="#whitepaper"
-                      class="btn btn-default btn-radius nav-link content-popup"
-                      >Get Early Access</a
-                    >
-                    <!-- <a href="#" class="btn btn-border btn-radius">Buy Token Now! <i class="ion-ios-arrow-thin-right"></i></a> -->
+                  <div class="btn_group pt-3 pb-3">
+                  <button type="submit" name="submit2" id="submit2"  class="btn btn-default btn-radius nav-link content-popup">
+                    Get Early Access
+                  </button>
                   </div>
                 </form>
               </div>
@@ -1407,9 +1436,6 @@ We are building an all-in-one mobile app for all your DeFi needs.
     <footer>
       <div
         class="top_footer bg_light_dark"
-        data-z-index="1"
-        data-parallax="scroll"
-        data-image-src="assets/images/footer_bg.png"
       >
         <div class="custom-container-footer">
           <div class="row">
@@ -1430,7 +1456,7 @@ We are building an all-in-one mobile app for all your DeFi needs.
               </h4>
               <ul class="footer_link list_arrow">
                 <li>
-                  <a href="#">contact@rivera.money</a>
+                  <a href="mailto:contact@rivera.money">contact@rivera.money</a>
                 </li>
                 <li>
                   <!-- <a href="#">+91 12345 12345</a> -->
@@ -1446,11 +1472,11 @@ We are building an all-in-one mobile app for all your DeFi needs.
                 </h4>
 
                 <ul class="footer_link list_arrow">
+                  <!-- <li>
+                    <a href="#" >FAQs</a>
+                  </li> -->
                   <li>
-                    <a href="#">FAQs</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
+                    <a href="https://medium.com/rivera-money" target="_blank" class="anchar_hvr">Blog</a>
                   </li>
                 </ul>
               </div>
@@ -1458,14 +1484,14 @@ We are building an all-in-one mobile app for all your DeFi needs.
             <div class="col-lg-3 col-md-12 mt_20_res">
               <div class="footer_logo mb-3">
                 <div class="ftr_pos">
-                  <div>
+                  <!-- <div>
                     <img class="wdth_50" src="assets/images/insta.png" />
                   </div>
                   <div>
                     <img class="wdth_50" src="assets/images/linknd.png" />
-                  </div>
+                  </div> -->
                   <div>
-                    <img class="wdth_50" src="assets/images/twitter.png" />
+                    <a href="https://twitter.com/riverasocial" target="_blank"> <img class="wdth_50" src="assets/images/twitter.png" /></a>
                   </div>
                 </div>
               </div>
@@ -1488,6 +1514,45 @@ We are building an all-in-one mobile app for all your DeFi needs.
                 </div>
             </div>
         </div> -->
+
+        
+<!-- newsletter Success MOdal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-md" role="document">
+    <div class="modal-content cust_modal">
+        <div class="modal_close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/images/cross_top.png" class="img-fluid" style="width: 120px;" width="100%" alt="">
+        </div>
+        <div class="modal-body">
+            <div class="container" style="padding: 10px 0px;" id="sigupSuccess">
+                <div class="col-md-12">
+                    <div  class="modal-body ng-star-inserted">
+                        <div class="mb-4 mt-2 text-center"><img style="width: 80px;"
+                                 src="assets/images/popupTick.png"
+                                alt="" class="img-fluid logo-sz">
+                        </div>
+                        <h4 class="text-center txt_wht" style="font-weight: 600;margin-bottom: 16px;">Enrolled for early access!</h4>
+                        <h6 class="text-center mb-4" style="font-size: 13px;color:
+                        #7F8488;">Being early is rewarding. You are successfully enrolled and we will notify you on your email as more slots open up.
+                        </h6>
+                        <!-- <div style="text-align: center;">
+                            <button id="newsLttrDn" class="btn btn-default mx-auto" type="submit" style="border: none;
+                           
+                            background-color: #269F90;
+                            width: 36%;">
+                                Okay
+                            </button>
+                        </div> -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
     </footer>
     <!-- END FOOTER SECTION -->
 
@@ -1500,7 +1565,7 @@ We are building an all-in-one mobile app for all your DeFi needs.
     <!-- owl-carousel min js  -->
     <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
     <!-- magnific-popup min js  -->
-    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- <script src="assets/js/magnific-popup.min.js"></script> -->
     <!-- waypoints min js  -->
     <script src="assets/js/waypoints.min.js"></script>
     <!-- parallax js  -->
@@ -1514,13 +1579,12 @@ We are building an all-in-one mobile app for all your DeFi needs.
     <!-- jquery.counterup.min js -->
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!-- modern_canvas js -->
-    <script src="assets/js/modern_canvas.js"></script>
-    <script src="assets/js/spop.min.js"></script>
+    <!-- <script src="assets/js/spop.min.js"></script> -->
     <!-- <script src="assets/js/notification.js"></script> -->
     <!-- scripts js -->
     <script src="assets/js/scripts.js"></script>
 
-    <script src="assets/js/rellax.min.js"></script>
+    <!-- <script src="assets/js/rellax.min.js"></script>
     <script>
       var rellax = new Rellax(".rellax", {
         center: true,
@@ -1528,7 +1592,7 @@ We are building an all-in-one mobile app for all your DeFi needs.
       var rellaxNonCentered = new Rellax(".rellax-non-centered", {
         center: false,
       });
-    </script>
+    </script> -->
 
     <script type="text/javascript">
       var parallax_offset = document.getElementById("parallax_offset");
@@ -1542,8 +1606,6 @@ We are building an all-in-one mobile app for all your DeFi needs.
     
     <script>
        $(document).ready(function () {
-         console.log("lololololo");
-         
             var screenWidth = window.innerWidth;
             var left = (screenWidth - 1170) / 2;
             if (left > 0) {
@@ -1562,19 +1624,79 @@ We are building an all-in-one mobile app for all your DeFi needs.
         });
     </script>
 
-    <!-- <script type="text/javascript">
-        $(document).on("ready", function() {
-          var parallaxSettings = {
-            initialOpacity: 1, //from 0 to 1, e.g. 0.34 is a valid value. 0 = transparent, 1 = Opaque
-            opacitySpeed: 0.1, //values from 0.01 to 1 -> 0.01: slowly appears on screen; 1: appears as soon as the user scrolls 1px
-            pageLoader: true
-          };
-    
-          parallaxImgScroll(parallaxSettings);
+      <script>
+ $(document).ready(function () {
+  $("#showMsg").hide();
+  $("#exampleModal2").modal("hide");
+ });
+        $("#newsLttrDn").click(function (event) {
+            $("#exampleModal2").modal("hide");
         });
-      </script> -->
+    
+        $("#newsletter_form_submit").submit(function (event) {
+            var sendData = $('#newsletter_email').val();
+            var body = { "email": sendData, "source":"daily newspaper subscription" }
+            $.post("http://139.59.23.28:8000/sales/contact_us", body)
+                .done(function (response_data) {
+                    if (response_data.success) {
+                      $("#showMsg").show();
+                    }
+                    else {
+                        var error = response_data.message
+                        alert(error)
+                    }
+                })
+                .fail(function () {
+                    alert("oops something went wrong !! please try after some time !!");
+                })
+    
+            event.preventDefault();
+        });
+    
+    </script>
+    
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/mouseleave.js"></script>
+    <script>
+             $("#early_access_form_submit").submit(function (event) {
+               debugger
+                 var email = $('#early_access_mail').val();
+                 var number = $('#early_access_password').val();
+                 var body = { "email":email, "contact":number, "source":"Get Early Access" }
+                 $.post("http://139.59.23.28:8000/sales/contact_us", body)
+                     .done(function (response_data) {
+                         if (response_data.success) {
+                          $("#exampleModal2").modal("show");
+                         }
+                         else {
+                             var error = response_data.message
+                             alert(error)
+                         }
+                     })
+                     .fail(function () {
+                         alert("oops something went wrong !! please try after some time !!");
+                     })
+         
+                 event.preventDefault();
+             });
+             function isNumber(e)
+              {
+                var keyCode = (e.which) ? e.which : e.keyCode;
+
+                if (keyCode > 31 && (keyCode < 48 || keyCode > 57))
+                  {
+                   // alert("You can enter only numbers 0 to 9 ");
+                    return false;
+                  }
+                return true;
+              }
+              function visitBlog(){
+                window.open(
+  'https://medium.com/rivera-money',
+  '_blank' // <- This is what makes it open in a new window.
+);
+              }
+         </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="assets/js/mouseleave.js"></script> -->
   </body>
 </html>

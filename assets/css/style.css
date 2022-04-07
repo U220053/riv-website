@@ -6363,7 +6363,7 @@ button.btn-white:hover {
   padding: 7px 40px;
   position: absolute;
   right: 5px;
-  top: 5px;
+  /* top: 2px; */
 }
 
 .newslattter_small {
@@ -8477,13 +8477,13 @@ html.w-mod-touch * {
     rgba(150, 67, 228, 0) 53.32%
   );
   border: 2px solid #ffffff;
-  padding: 60px 45px 40px;
+  padding: 30px 45px 40px;
 }
 .stack_second {
   width: 30%;
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.25);
-  padding: 60px 45px 40px;
+  padding: 30px 45px 40px;
 }
 .return_second {
   width: 30%;
@@ -8644,12 +8644,12 @@ html.w-mod-touch * {
 /* new flip design end */
 
 .btn_sbmt_back{
-  height: 36px;
+  height: 38px;
   display: flex;
   align-items: center;
   font-size: 14px;
   border-radius: 10px !important;
-  background: linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%);
+  /* background: linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%); */
 }
 
 .ern_img{
@@ -8681,6 +8681,48 @@ html.w-mod-touch * {
 }
 .mt_20{
   margin-top: 20px;
+}
+.img_wdt{
+  width: 60px;
+}
+.mb_12{
+  margin-bottom: 12px;
+}
+
+.mycustom input[type="email"] {
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px !important;
+}
+.anchar_hvr:hover{
+  background: linear-gradient(96.3deg, #55adff 3.46%, #a528dd 118.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cust_modal{
+background: linear-gradient(243.3deg, #8B78ED -99.94%, #22292F 55.78%);
+border-radius: 20px;
+}
+.modal_close {
+  position: absolute;
+  top: 13px;
+  right: 27px;
+  width: 15px;
+  /* background: red; */
+  z-index: 10;
+  cursor: pointer;
+}
+.tick_wdt{
+  width: 20px;
+  margin-right: 8px;
+  margin-top: -2px;
+}
+/* On screens that are 1460px or less, set the background color to olive */
+@media screen and (max-width: 1460px) {
+  .learn_section {
+    width: 40%;
+  }
 }
 
 /* On screens that are 992px or less, set the background color to olive */
