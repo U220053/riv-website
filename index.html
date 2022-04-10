@@ -49,6 +49,8 @@
     <!-- Color CSS -->
     <link id="layoutstyle" rel="stylesheet" href="assets/color/theme.css" />
 
+    <link rel="stylesheet" href="assets/css/intlTelInput.css">
+
     <!-- <link href="assets/css/scroll.css" rel="stylesheet"> -->
     <!-- End of StatCounter Code -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1390,12 +1392,13 @@ We are building an all-in-one mobile app for all your DeFi needs.
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                   </div>
                   <div class="form-group">
-                    <label for="early_access_password">Mobile number</label>
+                    <label for="mobile">Mobile number</label>
+                  <br>
                     <input onkeypress="return isNumber(event);"
                       type="text"
-                      class="form-control"
-                      id="early_access_password"
-                      placeholder="Password"
+                      class="form-control mobile"
+                      id="mobile"
+                      placeholder="Mobile"
                       maxlength="14"
                       minlength="8"
                       required
@@ -1660,7 +1663,7 @@ aria-hidden="true">
              $("#early_access_form_submit").submit(function (event) {
                debugger
                  var email = $('#early_access_mail').val();
-                 var number = $('#early_access_password').val();
+                 var number = $('#mobile').val();
                  var body = { "email":email, "contact":number, "source":"Get Early Access" }
                  $.post("http://139.59.23.28:8000/sales/contact_us", body)
                      .done(function (response_data) {
@@ -1696,6 +1699,25 @@ aria-hidden="true">
 );
               }
          </script>
+
+<script src="assets/js/intlTelInput.js"></script>
+
+<script>
+    var input = document.querySelector("#mobile");
+    window.intlTelInput(input, {
+        geoIpLookup: function (callback) {
+            $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "";
+                callback(countryCode);
+            });
+        },
+        hiddenInput: "number",
+        nationalMode: false,
+        placeholderNumberType: "MOBILE",
+        separateDialCode: true,
+        utilsScript: "assets/js/utils.js",
+    });
+</script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
     <!-- <script src="assets/js/mouseleave.js"></script> -->
   </body>
