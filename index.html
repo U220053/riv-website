@@ -1639,7 +1639,7 @@ aria-hidden="true">
         $("#newsletter_form_submit").submit(function (event) {
             var sendData = $('#newsletter_email').val();
             var body = { "email": sendData, "source":"daily newspaper subscription" }
-            $.post("http://139.59.23.28:8000/sales/contact_us", body)
+            $.post("https://backend.rivera.money/sales/contact_us", body)
                 .done(function (response_data) {
                     if (response_data.success) {
                       $("#showMsg").show();
@@ -1665,7 +1665,7 @@ aria-hidden="true">
                  var email = $('#early_access_mail').val();
                  var number = $('#mobile').val();
                  var body = { "email":email, "contact":number, "source":"Get Early Access" }
-                 $.post("http://139.59.23.28:8000/sales/contact_us", body)
+                 $.post("https://backend.rivera.money/sales/contact_us", body)
                      .done(function (response_data) {
                          if (response_data.success) {
                           $("#exampleModal2").modal("show");
