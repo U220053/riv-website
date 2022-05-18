@@ -8132,6 +8132,10 @@ html.w-mod-touch * {
   display: flex;
   margin: 42px 0px;
 }
+.product_list_inner{
+  display: flex;
+  margin: 20px 0px;
+}
 .list_inner_expert {
   display: flex;
   margin: 20px 0px;
@@ -8219,7 +8223,20 @@ html.w-mod-touch * {
   background: transparent;
   border: none;
 }
-
+.product_listing_backgrnd{
+  background: linear-gradient(120.36deg, #22292e 59.96%, #251a43 92.02%);
+    border-radius: 47px;
+    /* padding: 25px; */
+    padding: 25px 25px 25px 40px;
+}
+.product_listing_backgrnd_img{
+  /* width: 240px; */
+  width: 100%;
+  margin-top: -50px;
+}
+.mb_100{
+ margin-bottom: 100px;
+}
 @supports (animation-timeline: works) {
   @scroll-timeline cards-element-scrolls-in-body {
     source: selector(body);
@@ -8506,7 +8523,19 @@ html.w-mod-touch * {
 .stack_img img {
   width: 100px;
 }
-
+.gateWay_flex{
+  display: flex;
+  justify-content: space-between;
+}
+.gateWay_flex_inner{
+  width: 30%;
+  display: grid;
+  align-items: center;
+}
+.gateWay_flex_inner_header{
+  font-size: 20px;
+  color: white;
+}
 .return_section {
   width: 30%;
   text-align: center;
@@ -8735,6 +8764,19 @@ input:-ms-input-placeholder { /* Internet Explorer 10-11 */
 
 input::-ms-input-placeholder { /* Microsoft Edge */
   color: red;
+}
+.luxury_goods_bg {
+  background: url('/assets/images/luxury_bg.png');
+  background-size: cover;
+  background-position: center center;
+}
+.mobile_vault_hero {
+  min-height: 100vh;
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
