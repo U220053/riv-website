@@ -1384,7 +1384,7 @@ header.nav-fixed {
 }
 
 .nav-fixed .navbar-brand img {
-  max-width: 180px;
+  max-width: 100px;
 }
 
 header.no-sticky {
@@ -1593,7 +1593,7 @@ header a:hover,
 .v_light_dark .navbar-nav .dropdown-menu,
 .v_light_dark .lng_dropdown .ddChild,
 .v_light_dark .spop {
-  background-color: black;
+  background-color: rgba(18, 17, 34, 0.7);
   padding: 15px 50px;
 }
 
@@ -8227,16 +8227,32 @@ html.w-mod-touch * {
   background: linear-gradient(120.36deg, #22292e 59.96%, #251a43 92.02%);
     border-radius: 47px;
     /* padding: 25px; */
-    padding: 25px 25px 25px 40px;
+    padding: 0px 25px 0px 40px;
 }
 .product_listing_backgrnd_img{
   /* width: 240px; */
-  width: 100%;
+  width: 70%;
   margin-top: -50px;
 }
 .mb_100{
  margin-bottom: 100px;
 }
+.mt_100{
+  margin-top: 100px;
+}
+.mb_150{
+  margin-bottom: 150px;
+ }
+ .mt_80{
+   margin-top: 80px;
+ }
+ .line_height_25{
+  line-height: 25px;
+ }
+ .gateWay_flex_inner_header_18{
+   font-size: 18px;
+   color: white;
+ }
 @supports (animation-timeline: works) {
   @scroll-timeline cards-element-scrolls-in-body {
     source: selector(body);
@@ -8715,6 +8731,9 @@ html.w-mod-touch * {
 .mt_20{
   margin-top: 20px;
 }
+.mt_5{
+  margin-top: 5px;
+}
 .img_wdt{
   width: 60px;
 }
@@ -8766,7 +8785,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   color: red;
 }
 .luxury_goods_bg {
-  background: url('/assets/images/luxury_bg.png');
+  background: url('/assets/images/luxury_bgg.png');
   background-size: cover;
   background-position: center center;
 }
