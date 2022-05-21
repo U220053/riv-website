@@ -8806,6 +8806,20 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   align-items: center;
   justify-content: center;
 }
+.gateWay_flex_mobile{
+  display: none;
+}
+.gateWay_flex_mobile_inner{
+  text-align: center;
+  margin: 25px 30px;
+}
+.wdt_90{
+  width: 90px;
+}
+.sl_img_pddng{
+  background-color: rgb(33, 32, 48);
+  border-radius: 10px;
+}
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8917,5 +8931,19 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 .banner_text_s2 h1 {
   font-size: 32px;
+}
+
+.gateWay_flex{
+  display: none;
+}
+.gateWay_flex_mobile{
+  display: block;
+}
+.slnc_mobile{
+  display: none;
+}
+.investment_backgrnd{
+  margin-right: 0px;
+  margin-left: 0px;
 }
 }
