@@ -131,7 +131,7 @@ fieldset {
 }
 
 section {
-  padding: 100px 0;
+  padding: 75px 0;
   position: relative;
 }
 
@@ -8231,17 +8231,26 @@ html.w-mod-touch * {
 }
 .product_listing_backgrnd_img{
   /* width: 240px; */
-  width: 70%;
+  /* width: 70%;
+  margin-top: -50px; */
+  /* height: 200px; */
+  width: 300px;
   margin-top: -50px;
 }
 .mb_100{
  margin-bottom: 100px;
 }
+.mt_60{
+  margin-top: 60px;
+ }
 .mt_100{
   margin-top: 100px;
 }
 .mb_150{
   margin-bottom: 150px;
+ }
+ .mb_80{
+   margin-bottom: 80px;
  }
  .mt_80{
    margin-top: 80px;
