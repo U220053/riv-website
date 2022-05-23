@@ -8820,6 +8820,9 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   background-color: rgb(33, 32, 48);
   border-radius: 10px;
 }
+.mb_80{
+  margin-bottom: 80px;
+}
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
