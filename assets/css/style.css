@@ -1593,7 +1593,7 @@ header a:hover,
 .v_light_dark .navbar-nav .dropdown-menu,
 .v_light_dark .lng_dropdown .ddChild,
 .v_light_dark .spop {
-  background-color: rgba(18, 17, 34, 0.7);
+  background: rgba(0, 0, 0, 0.2);
   padding: 15px 50px;
 }
 
@@ -8835,6 +8835,12 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .mb_80{
   margin-bottom: 80px;
 }
+.abt_img_pos{
+  text-align: right;
+}
+.product_listing_backgrnd_mbl_img{
+  width: 110px;
+}
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8961,4 +8967,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   margin-right: 0px;
   margin-left: 0px;
 }
+.aboutimg2{
+  margin-top: 0px;
+ }
+ .abt_img_pos{
+   text-align: center;
+ }
 }
