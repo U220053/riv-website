@@ -8271,8 +8271,11 @@ html.w-mod-touch * {
   color: white;
 }
  .aboutimg2{
-  margin-top: -125px;
+  margin-top: -62px;
   width: 280px;
+ }
+ .card-body {
+  padding: 1rem;
  }
 @supports (animation-timeline: works) {
   @scroll-timeline cards-element-scrolls-in-body {
@@ -8841,6 +8844,12 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .product_listing_backgrnd_mbl_img{
   width: 110px;
 }
+.bck_dspl{
+  display: flex;
+}
+.img_tag{
+  margin-left: -84px;
+}
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8972,5 +8981,11 @@ input::-ms-input-placeholder { /* Microsoft Edge */
  }
  .abt_img_pos{
    text-align: center;
+ }
+ .bck_dspl{
+   display: block;
+ }
+ .img_tag{
+   display: none;
  }
 }
