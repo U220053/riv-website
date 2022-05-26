@@ -8856,6 +8856,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   display: flex;
 }
 .img_tag{
+  width: 80%;
   margin-left: -84px;
 }
 .fixed-top{
