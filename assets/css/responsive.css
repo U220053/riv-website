@@ -451,9 +451,9 @@
     .text_md_center.title_border h4::before {
         margin: 0 auto;
     }
-    header.fixed-top {
+    /* header.fixed-top {
         position: absolute;
-    }
+    } */
     .navbar-brand img {
         max-width: 100%;
     }
@@ -466,7 +466,7 @@
         animation-name: none;
         /* border-right: 1px solid rgba(255, 255, 255, 0.6); */
         float: left;
-        text-align: center;
+        text-align: left;
         /* width: 50%; */
         border-right: 0 none;
         width: 100%;

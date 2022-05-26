@@ -1383,7 +1383,7 @@ header.nav-fixed {
   padding: 5px 0;
 }
 
-.nav-fixed .navbar-brand img {
+.navbar-brand img {
   max-width: 100px;
 }
 
@@ -1593,8 +1593,9 @@ header a:hover,
 .v_light_dark .navbar-nav .dropdown-menu,
 .v_light_dark .lng_dropdown .ddChild,
 .v_light_dark .spop {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 15px 50px;
+  background: rgba(0, 0, 0, 1);
+  padding: 15px 22px;
+  height: auto;
 }
 
 .v_blue_light .nav-fixed,
@@ -8826,7 +8827,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 .gateWay_flex_mobile_inner{
   text-align: center;
-  margin: 25px 30px;
+  margin: 20px;
 }
 .wdt_90{
   width: 90px;
@@ -8834,6 +8835,12 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .sl_img_pddng{
   background-color: rgb(33, 32, 48);
   border-radius: 10px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.mr_15{
+  margin-right: 15px;
 }
 .mb_80{
   margin-bottom: 80px;
@@ -8842,13 +8849,22 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   text-align: right;
 }
 .product_listing_backgrnd_mbl_img{
-  width: 110px;
+  width: 80px;
+  height: 80px;
 }
 .bck_dspl{
   display: flex;
 }
 .img_tag{
   margin-left: -84px;
+}
+.fixed-top{
+  background: rgba(0, 0, 0, 0.2);
+  /* padding: 15px 50px; */
+  height: 70px;
+}
+.list_header_mbl{
+  font-size: 15px;
 }
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
@@ -8988,4 +9004,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
  .img_tag{
    display: none;
  }
+ .mt_20_mbl{
+  margin-top: 20px;
+}
 }

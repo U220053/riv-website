@@ -56,6 +56,8 @@ Version      : 1.6
 
     //Show Hide dropdown-menu Main navigation 
     $(document).ready(function() {
+        $('header').removeClass('nav-fixed');
+
         $('.dropdown-menu a.dropdown-toggler').on('click', function(e) {
             var $el = $(this);
             var $parent = $(this).offsetParent(".dropdown-menu");
