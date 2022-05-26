@@ -8531,13 +8531,9 @@ html.w-mod-touch * {
   justify-content: space-around;
 }
 .stack_first {
-  width: 30%;
+  width: 40%;
   text-align: center;
-  background: linear-gradient(
-    152.58deg,
-    rgba(150, 67, 228, 0.44) 2.03%,
-    rgba(150, 67, 228, 0) 53.32%
-  );
+  background: linear-gradient(319.9deg, rgba(150, 67, 228, 0.44) -15.16%, rgba(150, 67, 228, 0) 49%);
   border: 2px solid #ffffff;
   padding: 30px 45px 40px;
 }
@@ -8581,7 +8577,7 @@ html.w-mod-touch * {
   width: 30%;
   text-align: center;
   /* border: 2px solid rgba(255, 255, 255, 0.25); */
-  padding: 30px;
+  padding: 30px 30px 0px 30px;
 }
 
 .gateway_section {
@@ -8731,7 +8727,7 @@ html.w-mod-touch * {
     margin-right: 5px;
 }
 .stck_btn{
-  padding: 0 40px;
+  padding: 0 90px;
 }
 .mh_60{
   min-height: 60px;
@@ -8867,6 +8863,76 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .list_header_mbl{
   font-size: 15px;
 }
+.hero_wdth{
+  width: 100%;
+  margin-left: 15px;
+}
+
+.invstment_img{
+  width: 40px;
+  margin-right: 12px;
+}
+.txt_size_investment {
+  font-size: 20px;
+  font-weight: 600;
+}
+.clr_green {
+  color: #99CF84;
+}
+.bttom_border {
+  border-bottom: 1px solid #5c5d5f;
+  padding-bottom: 30px;
+}
+.progress-bar-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fnt_12 {
+  font-size: 12px;
+}
+.rskMtr{
+  width: 50%;
+    text-align: initial;
+}
+.progress_left {
+  float: left;
+  width: 60%;
+}
+.progress {
+  border-radius: 29px;
+  height: 12px;
+  background-color: rgba(123, 125, 138, 0.48);
+}
+.blueChip_progress {
+  background-color: #7479F1;
+}
+.progress_text {
+  width: 30%;
+  float: left;
+  margin-top: -9px;
+  margin-left: 5px;
+}
+.hlp_crcl{
+  width: 14px;
+  margin-right: 5px;
+}
+.clr_green_back{
+  background-color: #99CF84;
+}
+.section_gap_black_white_pb {
+  padding-bottom: 175px;
+}
+.section_subheader {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  line-height: 50px;
+}
+.wht_bck_mt {
+  background-color: white;
+  margin-top: -60px;
+}
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8876,10 +8942,126 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 992px) {
+
   .stack_first{
     width: unset;
     margin: 50px;
   }
+  .stack_second{
+    width: unset;
+    margin: 50px;
+  }
+  .return_section{
+    width: unset;
+  }
+  .flex_cnt{
+    flex-direction: column;
+  }
+  .gateway_section{
+    width: 300px;
+    margin: auto;
+  }
+  .flx_cnt{
+    flex-direction: column;
+  }
+  .wdt_res{
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .flex_cnt_lrn {
+    flex-direction: column;
+  }
+  .wdt_res80{
+    width: 80%;
+  }
+  .wdt_res90{
+    width: 90%;
+  }
+  .mycustom {
+    width: 330px;
+  }
+  .earlyAccess_backgrnd {
+    margin: 20px;
+    padding: 30px;
+  }
+  .mb_15_res{
+    margin-bottom: 15px;
+  }
+  .earlyAccess_black {
+    width: 100%;
+  }
+  .mb_20_res{
+    margin-bottom: 20px;
+  }
+  .text-md-60{
+    width: 80%;
+  }
+  .hrd_section_res{
+    width: 80%;
+    margin: auto;
+  }
+  .learn_section{
+    width: unset;
+  }
+  .mb_80_res{
+    margin-bottom: 80px;
+  }
+  .custom-container-footer {
+    padding: 0px 10% 50px;
+}
+.mt_20_res{
+  margin-top: 20px;
+}
+.ftr_pos{
+  justify-content: space-between;
+}
+.mycustom .input-group-prepend {
+  top: 4px;
+}
+.header_txt{
+  font-size: 36px;
+}
+.section_subheader{
+  font-size: 32px;
+  line-height: 40px;
+}
+.right_border {
+  border-right: none;
+  padding-right: unset;
+}
+.sub_header_txt {
+  font-size: 22px;
+  line-height: 30px;
+}
+.section_subheader_res{
+  width: 90%;
+    margin: auto;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+  padding-left: unset;
+  padding-right: unset;
+}
+.banner_text_s2 h1 {
+  font-size: 32px;
+}
+.rskMtr{
+  width: 70%;
+}
+.bck_dspl{
+  display: block;
+}
+
+.wht_bck_mt{
+  margin-top: -20px;
+}
+.hero_wdth{
+  margin-left: 0px;
+}
+.mt_20_mbl{
+  margin-top: 20px;
+}
   .stack_second{
     width: unset;
     margin: 50px;
@@ -9009,3 +9191,21 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   margin-top: 20px;
 }
 }
+
+@media screen and (max-width: 550px) {
+  .rskMtr{
+    width: 50%;
+  }
+}
+
+/* On screens that are 992px or less, set the background color to olive */
+@media screen and (max-width: 450px) {
+  .rskMtr{
+    width: 100%;
+  }
+  .progress-bar-position{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
