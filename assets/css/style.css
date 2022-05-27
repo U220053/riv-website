@@ -8526,6 +8526,12 @@ html.w-mod-touch * {
   display: flex;
   justify-content: space-evenly;
 }
+
+.flex_cnt_mb{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .flex_cnt_lrn {
   display: flex;
   justify-content: space-around;
@@ -8949,6 +8955,9 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   font-size: 24px;
   line-height: 40px;
 }
+.explore_more_pddng{
+  padding: 100px 0px;
+}
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8959,13 +8968,17 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 992px) {
 
+  .explore_more_pddng{
+    padding: 40px 0px;
+  }
+
   .mrgn_top_mbl{
     margin-top: 10px;
   }
 
   .stack_first{
     width: unset;
-    margin: 50px;
+    margin: 30px;
   }
   .stack_second{
     width: unset;
@@ -9220,6 +9233,9 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   margin-top: 15px;
   margin-bottom: 30px;
 }
+.mb_10_mbl{
+  margin-bottom: 10px;
+}
 }
 
 @media screen and (max-width: 550px) {
@@ -9230,12 +9246,12 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 450px) {
-  .rskMtr{
+  /* .rskMtr{
     width: 100%;
-  }
-  .progress-bar-position{
+  } */
+  /* .progress-bar-position{
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 }
 
