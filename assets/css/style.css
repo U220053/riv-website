@@ -8838,6 +8838,9 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .mr_15{
   margin-right: 15px;
 }
+.mr_20{
+  margin-right: 20px;
+}
 .mb_80{
   margin-bottom: 80px;
 }
@@ -8933,6 +8936,19 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   background-color: white;
   margin-top: -60px;
 }
+.dsk_device{
+  display: block;
+}
+.mbl_device{
+  display: none;
+}
+.mt_100_earn{
+  margin-top: 100px;
+}
+.section_subheader_mob{
+  font-size: 24px;
+  line-height: 40px;
+}
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8942,6 +8958,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 992px) {
+
+  .mrgn_top_mbl{
+    margin-top: 10px;
+  }
 
   .stack_first{
     width: unset;
@@ -9189,6 +9209,16 @@ input::-ms-input-placeholder { /* Microsoft Edge */
  }
  .mt_20_mbl{
   margin-top: 20px;
+}
+.dsk_device{
+  display: none;
+}
+.mbl_device{
+  display: block;
+}
+.mt_100_earn{
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 }
 
