@@ -7690,6 +7690,15 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .explore_more_pddng{
   padding: 100px 0px;
 }
+
+.hero_img_mbl_visibility{
+  display: none;
+}
+
+.hero_img_visibility{
+  display: block;
+}
+
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -7971,9 +7980,19 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 @media screen and (max-width: 550px) {
+
   .rskMtr{
     width: 50%;
   }
+
+  .hero_img_mbl_visibility{
+    display: block;
+  }
+  
+  .hero_img_visibility{
+    display: none;
+  }
+
 }
 
 /* On screens that are 992px or less, set the background color to olive */
