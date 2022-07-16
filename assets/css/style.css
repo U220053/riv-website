@@ -7710,6 +7710,17 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   position: relative;
   text-transform: uppercase;
 }
+.mr_10{
+  margin-right: 10px;
+}
+
+.ftr_contact_us{
+  text-align: center;
+}
+
+.ftr_icon{
+  text-align: right;
+}
 
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
@@ -8008,6 +8019,14 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   
   .hero_img_visibility{
     display: none;
+  }
+
+  .ftr_contact_us{
+    text-align: left;
+  }
+  
+  .ftr_icon{
+    text-align: left;
   }
 
 }
