@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -264,7 +265,7 @@
                   <!-- <h1 class="mobile_vault_hero-title text-white">
                       Secure, Convenient and <br class="mob_hidden"> Private Vault for all <span>Valuables</span>
                   </h1> -->
-                  <h1 class="industies_hero-title text-white text-extraBold mb-5">
+                  <h1 class="industies_hero-title text-white text-extraBold mb-5" style="font-family: 'Red Hat Display', sans-serif;font-weight: 700;">
                     Bridging DeFi to<br>
                     Institutional Investors
                   </h1>
@@ -596,6 +597,11 @@ aria-hidden="true">
 </div>
 </div>
     </footer>
+
+    <div id="cookieConsent">
+      <div id="closeCookieConsent">x</div>
+      This website is using cookies. <a href="#" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
+  </div>
     <!-- END FOOTER SECTION -->
 
     <!-- <a href="#" class="scrollup btn-default"><i class="ion-ios-arrow-up"></i></a> -->
@@ -648,6 +654,39 @@ aria-hidden="true">
 
     });
     </script> -->
+
+    <script>
+// Set a Cookie
+// function setCookie(cName, cValue, expDays) {
+//         let date = new Date();
+//         date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+//         const expires = "expires=" + date.toUTCString();
+//         document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+// }
+
+// function getCookie(cName) {
+//       const name = cName + "=";
+//       const cDecoded = decodeURIComponent(document.cookie); //to be careful
+//       const cArr = cDecoded .split('; ');
+//       let res;
+//       cArr.forEach(val => {
+//           if (val.indexOf(name) === 0) res = val.substring(name.length);
+//       })
+//       return res;
+// }
+
+//       $(document).ready(function(){   
+
+//     setTimeout(function () {
+//         $("#cookieConsent").fadeIn(200);
+//      }, 4000);
+
+//     $("#closeCookieConsent, .cookieConsentOK").click(function() {
+//       setCookie('acceprCookie', 'sahil', 30);
+//         $("#cookieConsent").fadeOut(200);
+//     }); 
+// }); 
+    </script>
 
     <script type="text/javascript">
       var parallax_offset = document.getElementById("parallax_offset");
