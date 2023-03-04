@@ -593,13 +593,14 @@ button:focus {
 .btn:focus,
 .btn.active:not(:disabled):not(.disabled),
 .btn:active:not(:disabled):not(.disabled) {
-  background-image: -webkit-linear-gradient(
+  background: transparent;
+  /* background-image: -webkit-linear-gradient(
     left,
     #ff67cb 0%,
     #ffcc67 51%,
     #ff67cb
   );
-  background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 51%, #ff67cb);
+  background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 51%, #ff67cb); */
   box-shadow: none;
   outline: none;
 }
@@ -646,13 +647,14 @@ button:focus {
 .btn-default:focus,
 .btn.active:not(:disabled):not(.disabled),
 .btn:active:not(:disabled):not(.disabled) {
-  background-image: -webkit-linear-gradient(
+  background: transparent;
+  /* background-image: -webkit-linear-gradient(
     left,
     #ffcc67 0%,
     #ff67cb 51%,
     #ffcc67
   );
-  background-image: linear-gradient(to right, #ffcc67 0%, #ff67cb 51%, #ffcc67);
+  background-image: linear-gradient(to right, #ffcc67 0%, #ff67cb 51%, #ffcc67); */
   box-shadow: none;
   color: #fff;
   outline: none;
@@ -8096,3 +8098,11 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 
+.launch_app_btn{
+  margin-top: -5px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
