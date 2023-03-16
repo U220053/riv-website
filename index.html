@@ -249,7 +249,7 @@
               data-animation-delay="2s"
             >
 
-            <button onclick="OpenMvp()" class="btn transparent_btn launch_app_btn">Launch App</button>
+            <button onclick="OpenURL('https://app.rivera.money/#/')" class="btn transparent_btn launch_app_btn">Launch App</button>
             <!-- <a
             onclick="OpenMvp()"
            class="anchar_hvr"
@@ -488,8 +488,8 @@
           </p> -->
         </div>
         <div class="d-flex" style="    justify-content: center;align-items: center;">
-          <div style="padding: 20px;"><img src="/assets/images/creativeLab.png" style="width:250px"></div>
-          <div style="padding: 20px;"><img src="/assets/images/excel-awards.png" style="width:250px"></div>
+          <div style="padding: 20px;"><img onclick="OpenURL('https://creativedestructionlab.com//')" src="/assets/images/creativeLab.png" style="width:250px"></div>
+          <div style="padding: 20px;"><img onclick="OpenURL('https://medium.com/rivera-money/rivera-awarded-1-defi-platform-in-uae-6cddd0f3e101')" src="/assets/images/excel-awards.png" style="width:250px"></div>
         </div>
         <!-- <h1 class="section_subheader text-center mb_60 hrd_section_res">
           Launch your custom ERC-4626 vault
@@ -865,8 +865,8 @@ window.intlTelInput(input, {
 });
 </script>
 <script>
-  function OpenMvp() {
-      window.open("https://app.rivera.money/#/", "_blank");
+  function OpenURL(url) {
+      window.open(url, "_blank");
   }
 </script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
