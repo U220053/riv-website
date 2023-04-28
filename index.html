@@ -558,7 +558,6 @@
                       placeholder="Mobile"
                       maxlength="14"
                       minlength="8"
-                      required
                       ondrop="return false;" onpaste="return false;"
                     />
                   </div>
@@ -834,6 +833,7 @@ aria-hidden="true">
                debugger
                  var email = $('#early_access_mail').val();
                  var number = $('#mobile').val();
+                 window.open('https://tally.so/r/m6Lope?email=' + email,'_blank');
                  var body = { "email":email, "contact":number, "source":"Get Early Access" }
                  $.post("https://backend.rivera.money/sales/contact_us", body)
                      .done(function (response_data) {
