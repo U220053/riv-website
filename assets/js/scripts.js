@@ -237,132 +237,132 @@ Version      : 1.6
     /*===================================*
 	05. ROAD MAP SLIDER JS
 	*===================================*/
-    $('.roadmap').owlCarousel({
-        loop: false,
-        margin: 30,
-        autoHeight: true,
-        nav: true,
-        navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            380: {
-                items: 2,
-            },
-            600: {
-                items: 3,
-                margin: 15
-            },
-            1000: {
-                items: 5,
-            },
-            1199: {
-                items: 6
-            }
-        }
-    });
+    // $('.roadmap').owlCarousel({
+    //     loop: false,
+    //     margin: 30,
+    //     autoHeight: true,
+    //     nav: true,
+    //     navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         380: {
+    //             items: 2,
+    //         },
+    //         600: {
+    //             items: 3,
+    //             margin: 15
+    //         },
+    //         1000: {
+    //             items: 5,
+    //         },
+    //         1199: {
+    //             items: 6
+    //         }
+    //     }
+    // });
 
-    $('.roadmap_wrap').owlCarousel({
-        loop: false,
-        margin: 30,
-        autoHeight: true,
-        nav: true,
-        navText: ['<i class="ion-arrow-left-c"></i>', '<i class="ion-arrow-right-c"></i>'],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            380: {
-                items: 2,
-            },
-            767: {
-                items: 3,
-            },
-            1000: {
-                items: 4,
-            },
-            1199: {
-                items: 5
-            }
-        }
-    });
-    $('.timeline').owlCarousel({
-        loop: false,
-        margin: 30,
-        autoHeight: true,
-        nav: true,
-        navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            380: {
-                items: 2,
-            },
-            767: {
-                items: 3,
-            },
-            1000: {
-                items: 4,
-            },
-            1199: {
-                items: 5
-            }
-        }
-    });
+    // $('.roadmap_wrap').owlCarousel({
+    //     loop: false,
+    //     margin: 30,
+    //     autoHeight: true,
+    //     nav: true,
+    //     navText: ['<i class="ion-arrow-left-c"></i>', '<i class="ion-arrow-right-c"></i>'],
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         380: {
+    //             items: 2,
+    //         },
+    //         767: {
+    //             items: 3,
+    //         },
+    //         1000: {
+    //             items: 4,
+    //         },
+    //         1199: {
+    //             items: 5
+    //         }
+    //     }
+    // });
+    // $('.timeline').owlCarousel({
+    //     loop: false,
+    //     margin: 30,
+    //     autoHeight: true,
+    //     nav: true,
+    //     navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         380: {
+    //             items: 2,
+    //         },
+    //         767: {
+    //             items: 3,
+    //         },
+    //         1000: {
+    //             items: 4,
+    //         },
+    //         1199: {
+    //             items: 5
+    //         }
+    //     }
+    // });
 
     /*===================================*
     06. BLOG SLIDER S
     *===================================*/
-    $('.blog_slider').owlCarousel({
-        loop: false,
-        margin: 30,
-        nav: false,
-        dots: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            380: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            1000: {
-                items: 3,
-            },
-            1199: {
-                items: 3
-            }
-        }
-    });
+    // $('.blog_slider').owlCarousel({
+    //     loop: false,
+    //     margin: 30,
+    //     nav: false,
+    //     dots: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         380: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 2,
+    //         },
+    //         1000: {
+    //             items: 3,
+    //         },
+    //         1199: {
+    //             items: 3
+    //         }
+    //     }
+    // });
 
     /*===================================*
     07. TESTIMONIAL SLIDER JS
     *===================================*/
-    $('.testimonial_slider').owlCarousel({
-        loop: false,
-        margin: 30,
-        nav: false,
-        dots: true,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 1,
-            },
-            1000: {
-                items: 2,
-            },
-            1199: {
-                items: 2
-            }
-        }
-    });
+    // $('.testimonial_slider').owlCarousel({
+    //     loop: false,
+    //     margin: 30,
+    //     nav: false,
+    //     dots: true,
+    //     autoHeight: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 1,
+    //         },
+    //         1000: {
+    //             items: 2,
+    //         },
+    //         1199: {
+    //             items: 2
+    //         }
+    //     }
+    // });
 
     /*===================================*
      08.COUNTDOWN JS

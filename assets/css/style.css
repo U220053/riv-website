@@ -42,7 +42,7 @@ Version      : 1.7
 
 body {
   background: #ffffff none repeat scroll 0 0;
-  color: #7a7a7a;
+  color: #ffffff;
   font-family: 'Inter', sans-serif;;
   font-size: 16px;
   font-weight: 400;
@@ -158,7 +158,7 @@ input {
   width: 100%;
 }
 
-button {
+/* button {
   background-image: -webkit-linear-gradient(left, #ff67cb 0%, #ffcc67 99%);
   background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 99%);
   border: 0;
@@ -166,9 +166,8 @@ button {
   color: #ffffff;
   cursor: pointer;
   padding: 10px 20px;
-  /* text-transform: uppercase; */
   transition: all 0.5s ease 0s;
-}
+} */
 
 button:hover {
   color: #fff;
@@ -496,7 +495,7 @@ button:focus {
 
 .btn {
   border: 0 none;
-  border-radius: 10px;
+  border-radius: 0px;
   font-size: 16px;
   font-weight: 500;
   height: 48px;
@@ -505,6 +504,7 @@ button:focus {
   position: relative;
   /* text-transform: uppercase; */
   vertical-align: middle;
+  min-width: 200px;
 }
 
 .btn.btn-radius {
@@ -581,7 +581,7 @@ button:focus {
   margin-right: 10px;
   vertical-align: middle;
 }
-
+/* 
 .btn.active.focus,
 .btn.active:focus,
 .btn.active:hover,
@@ -594,16 +594,9 @@ button:focus {
 .btn.active:not(:disabled):not(.disabled),
 .btn:active:not(:disabled):not(.disabled) {
   background: transparent;
-  /* background-image: -webkit-linear-gradient(
-    left,
-    #ff67cb 0%,
-    #ffcc67 51%,
-    #ff67cb
-  );
-  background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 51%, #ff67cb); */
   box-shadow: none;
   outline: none;
-}
+} */
 
 .btn-default-color {
   background: linear-gradient(96.3deg, #55adff 3.46%, #a528dd 118.55%);
@@ -6891,6 +6884,10 @@ html.w-mod-touch * {
 .txt_wht {
   color: white;
 }
+.marketMakingSubHeader{
+  line-height: 24px;
+  font-size: 14px;
+}
 .line_height20 {
   line-height: 20px;
 }
@@ -7552,7 +7549,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   color: red;
 }
 .luxury_goods_bg {
-  background: url('/assets/images/luxury_bggg.webp');
+  background: url('/assets/images/home_bg.webp');
   background-size: cover;
   background-position: center center;
 }
@@ -7681,6 +7678,14 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
   line-height: 50px;
 }
+
+.section_vault_subheader {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  line-height: 50px;
+}
+
 .wht_bck_mt {
   background-color: white;
   margin-top: -60px;
@@ -7777,6 +7782,287 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 /*Cookie Consent End*/
 
+
+.launch_app_btn{
+  margin-top: -5px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.clr_gray{
+  color: rgba(127, 132, 136, 1);
+}
+.fnt_18{
+  font-size: 18px;
+}
+
+.fnt_600{
+  font-weight: 600;
+}
+
+.gray_button{
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.explore_more .explore_more-label {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 15px;
+  /* text-decoration: underline; */
+}
+
+.explore_more .explore_card_navs {
+  width: 50%; 
+  /* height: 40px; */
+  /* line-height: 40px; */
+  /* background-color: #b1b1b1; */
+  /* font-size: 19px; */
+  /* display: inline-block; */
+  /* color: #999999; */
+  text-align:center;
+  cursor: pointer;
+  /* padding: 0px 10px; */
+  /* margin: 0px; */
+  /* transition: all 0.2s ease; */
+  /* border: 1px solid; */
+  /* padding: 10px 7px; */
+  /* font-size: 27px; */
+  /* border-radius: 50%; */
+  /* width: 70px; */
+
+}
+
+.pr_20{
+  padding-right: 20px;
+}
+
+
+.explore_more .explore_cards-each {
+  background-color: #181523;
+  padding: 20px 0px 0px 20px;
+  min-height: 150px;
+  /* min-width: 350px; */
+  height: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.explore_more .explore_card_navs-next {
+  margin-left: -5px;
+}
+
+.explore_more_pos{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update_header_font{
+  font-size: 22px;
+  color: white;
+}
+
+/* .swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+} */
+
+.explore_more .explore_cards_swiper .swiper-wrapper {
+  padding: 15px 0px 15px 10px;
+}
+
+.marketMakingBox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.marketMakingInnerBox{
+  border: 1.52px solid #FFFFFF4A;
+  width: 32%;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  min-width: 300px;
+}
+
+.redBox{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #81313461;
+  padding: 10px 15px;
+  color: #B93D3F;
+  border-radius: 0px 0px 0px 20px;
+}
+
+.yellowBox{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #D9B24E36;
+  padding: 10px 15px;
+  color: #D9B24E;
+  border-radius: 0px 0px 0px 20px;
+}
+
+
+.greenBox{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #75A0642E;
+  padding: 10px 15px;
+  color: #75A064;
+  border-radius: 0px 0px 0px 20px;
+}
+
+
+.ecosystem_back{
+  background: linear-gradient(262.38deg, #9643E4 -69.39%, rgba(150, 67, 228, 0) 28.5%, rgba(150, 67, 228, 0.2) 108.54%);
+}
+.almBack{
+  background-image: url(/assets/images/almVaultBg.svg);
+  background-size: cover;
+  min-height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lh_1{
+  line-height: 1.5rem;
+}
+
+.wdth_height_90{
+  width: 90px;
+  height: 90px;
+}
+
+.wdth_width_150{
+  width: 150px;
+  height: 90px;
+}
+
+.launch_btn_pos{
+  display: flex;
+  justify-content: center;
+}
+.launch_btn_pdng{
+  padding: 0px 10px;
+}
+
+.wdth_20{
+  width: 20px;
+}
+
+.wdth_50{
+  width: 50px;
+}
+
+.pddng_30{
+  padding: 30px;
+}
+
+.pddng_30_45{
+  padding: 30px 0px 20px 45px;
+}
+
+.wdth_324{
+  width: 324px;
+}
+
+.width_225{
+  width: 225px;
+}
+
+.width_287{
+  width: 287px;
+}
+
+.marketMaking3ImgWdth{
+  height: 150px;
+  object-fit: none;
+}
+.mt_48{
+  margin-top: 48px;
+}
+
+.marketMakingBtn{
+  background: transparent;
+  border: 1.38px solid #FFFFFF;
+  color: white;
+}
+
+.wdth_300{
+  width: 300px;
+}
+
+.gray_bg{
+  background: #282E3A;
+    border: none;
+}
+
+.linaerText{
+  background: linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%);
+  /* font-size: 72px; */
+  /* background: -webkit-linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ecosystemList li::before {
+  content: "\2022";
+  background: linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%);
+  /* font-size: 72px; */
+  /* background: -webkit-linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.color_snd{
+ color: #9676ED;
+}
+
+.color_snd:hover{
+  color: #9676ED;
+ }
+
+ .height_130{
+ height: 130px;
+ }
+
+ .mb_60{
+  margin-bottom: 60px;
+ }
+
+ .min_200{
+  min-width: 200px;
+  height: 55px;
+  border-radius: 0;
+ }
+
+ .mb_75{
+  margin-bottom: 75px;
+ }
+ .mbNeg25{
+  margin-bottom: -25px;
+ }
+
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -7786,6 +8072,11 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 992px) {
+
+  .marketMakingBox{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .explore_more_pddng{
     padding: 40px 0px;
@@ -8062,7 +8353,32 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 }
 
+@media screen and (max-width: 767px) {
+  .btn{
+    min-width: 150px;
+  }
+  .section_vault_subheader {
+    font-size: 28px;
+  }
+  .explore_more .explore_cards_swiper .swiper-wrapper {
+    padding: 15px 0px 15px 0px;
+}
+
+.explore_more .explore_cards-each {
+  min-height: 180px;
+}
+
+.marketMakingInnerBox{
+  min-width: 350px;
+    margin-bottom: 30px;
+}
+}
+
 @media screen and (max-width: 550px) {
+
+  .section_vault_subheader {
+    font-size: 18px;
+  }
 
   .rskMtr{
     width: 50%;
@@ -8097,26 +8413,3 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   } */
 }
 
-
-.launch_app_btn{
-  margin-top: -5px;
-  height: 37px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
-.clr_gray{
-  color: rgba(127, 132, 136, 1);
-}
-.fnt_18{
-  font-size: 18px;
-}
-
-.fnt_600{
-  font-weight: 600;
-}
-
-.gray_button{
-  background: rgba(0, 0, 0, 0.2);
-}
