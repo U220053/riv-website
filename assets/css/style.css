@@ -581,6 +581,22 @@ button:focus {
   margin-right: 10px;
   vertical-align: middle;
 }
+
+.mt_4_neg{
+  margin-top: -4px;
+  cursor: pointer;
+}
+
+.pddng_4{
+  padding: 4px 15px;
+}
+
+.footer_font{
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
 /* 
 .btn.active.focus,
 .btn.active:focus,
@@ -4951,8 +4967,13 @@ header a:hover,
 13. FOOTER SECTION
 *===================================*/
 
+.ftr_hrd{
+  text-align: center;
+    margin-bottom: 30px;
+}
+
 .custom-container-footer {
-  padding: 0px 15% 50px;
+  padding: 0px 10% 0px;
 }
 
 .top_footer {
@@ -4960,7 +4981,7 @@ header a:hover,
 }
 
 .top_footer {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .footer_title {
@@ -6905,7 +6926,7 @@ html.w-mod-touch * {
   font-weight: bold;
   color: white;
   line-height: 40px;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Red Hat Display';
 }
 
 .section_subheader {
@@ -6913,6 +6934,7 @@ html.w-mod-touch * {
   font-weight: bold;
   color: white;
   line-height: 50px;
+  font-family: 'Red Hat Display';
 }
 
 .earlyAccess_black {
@@ -7684,6 +7706,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   font-weight: bold;
   color: white;
   line-height: 50px;
+  font-family: 'Red Hat Display';
 }
 
 .wht_bck_mt {
@@ -7866,6 +7889,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .update_header_font{
   font-size: 22px;
   color: white;
+  font-family: 'Red Hat Display';
 }
 
 /* .swiper-container {
@@ -8377,7 +8401,9 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 @media screen and (max-width: 550px) {
 
   .section_vault_subheader {
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
+
   }
 
   .rskMtr{
