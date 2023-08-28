@@ -8107,6 +8107,11 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 992px) {
 
+  .contct_btn{
+    font-size: 28px;
+    padding-bottom: 15px;
+  }
+  
   .marketMakingBox{
     flex-wrap: wrap;
     justify-content: end;
@@ -8185,7 +8190,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     margin-bottom: 80px;
   }
   .custom-container-footer {
-    padding: 0px 10% 50px;
+    padding: 0px 10% 15px;
 }
 .mt_20_res{
   margin-top: 20px;
@@ -8300,7 +8305,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     margin-bottom: 80px;
   }
   .custom-container-footer {
-    padding: 0px 10% 50px;
+    padding: 0px 10% 15px;
 }
 .mt_20_res{
   margin-top: 20px;
@@ -8388,6 +8393,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 @media screen and (max-width: 767px) {
+  .mbNeg25_mob{
+    margin-bottom: -25px;
+   }
+  
   .btn{
     min-width: 150px;
   }
