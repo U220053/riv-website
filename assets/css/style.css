@@ -181,6 +181,11 @@ button:focus {
   overflow: hidden;
 }
 
+.contct_btn{
+  font-size: 34px;
+    font-family: 'Red Hat Display';
+}
+
 
 .background_bg {
   background-attachment: fixed;
@@ -8087,6 +8092,11 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   margin-bottom: -25px;
  }
 
+ .marketMakingBtnHvr:hover{
+    background-color: white;
+    color: black;
+ }
+
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8099,7 +8109,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
   .marketMakingBox{
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: end;
   }
 
   .explore_more_pddng{
