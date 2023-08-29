@@ -163,6 +163,10 @@ input {
   border-radius: 0;
 }
 
+.fnt_wght_100{
+  font-weight: 100;
+}
+
 .ftr_btn {
   border: 0 none;
   border-radius: 0px;
@@ -176,6 +180,7 @@ input {
   vertical-align: middle;
   min-width: 110px;
   cursor: pointer;
+  background: white;
 }
 
 /* button {
@@ -7872,6 +7877,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 15px;
+  color: white;
   /* text-decoration: underline; */
 }
 
@@ -8157,6 +8163,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   display: none;
  }
 
+ .emailBoxWdth{
+  min-width: 300px;
+ }
+
 /* On screens that are 1460px or less, set the background color to olive */
 @media screen and (max-width: 1460px) {
   .learn_section {
@@ -8188,7 +8198,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   .marketMakingBoxEcosystem{
     flex-wrap: wrap;
     justify-content: end;
-    margin: 0px 12px;
+    margin: 0px 20px;
   }
 
   .explore_more_pddng{
@@ -8468,6 +8478,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 @media screen and (max-width: 767px) {
 
+  .emailBoxWdth{
+    min-width: 250px;
+   }
+
   .marketMakingInnerBox{
     padding: 6px 20px 15px 20px;
     min-width: 350px;
@@ -8511,8 +8525,12 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 @media screen and (max-width: 550px) {
 
+  .emailBoxWdth{
+    min-width: 250px;
+   }
+
   .section_vault_subheader {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 
   }
