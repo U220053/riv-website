@@ -345,7 +345,7 @@
     <section class="explore_more" id="explore_more_id">
       <div class="container-fluid">
           <!-- <div class="row align-items-center justify-content-lg-end"> -->
-            <div class="row">
+            <div class="row" style="align-items: center;">
               <div class="col-lg-2 col-md-3 col-8 px-md-0">
                   <p class="explore_more-label">
                     New Updates
@@ -942,6 +942,30 @@ aria-hidden="true">
               var leftPx = left.toString() + 'px';
               document.getElementById("explore_more_id").style.marginLeft = leftPx;
           }
+
+          var swiper = new Swiper('.explore_cards_swiper', {
+            slidesPerView: 3,
+            loop: true,
+            grabCursor: true,
+            breakpoints: {
+                1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                }
+            },
+            navigation: {
+                nextEl: '.explore_card_navs-next',
+                prevEl: '.explore_card_navs-prev'
+            },
+        });
       };
 
       window.addEventListener('resize', function (event) {
