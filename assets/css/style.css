@@ -158,6 +158,26 @@ input {
   width: 100%;
 }
 
+.bck_trans{
+  background: transparent;
+  border-radius: 0;
+}
+
+.ftr_btn {
+  border: 0 none;
+  border-radius: 0px;
+  font-size: -7px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0px 8px;
+  position: relative;
+  /* text-transform: uppercase; */
+  vertical-align: middle;
+  min-width: 110px;
+  cursor: pointer;
+}
+
 /* button {
   background-image: -webkit-linear-gradient(left, #ff67cb 0%, #ffcc67 99%);
   background-image: linear-gradient(to right, #ff67cb 0%, #ffcc67 99%);
@@ -597,7 +617,7 @@ button:focus {
 }
 
 .footer_font{
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   font-weight: 600;
 }
@@ -966,7 +986,11 @@ header.nav-fixed {
 }
 
 .navbar-brand img {
-  max-width: 120px;
+  max-width: 150px;
+}
+
+.cntc_wdth{
+  width: 38%
 }
 
 header.no-sticky {
@@ -4986,7 +5010,16 @@ header a:hover,
 }
 
 .top_footer {
-  padding: 30px 0;
+  padding: 45px 0;
+}
+
+.form-control:focus{
+  background: transparent;
+  color: white;
+}
+
+.ftr_btn:hover{
+  color: #000;
 }
 
 .footer_title {
@@ -6712,7 +6745,7 @@ span.statcounter {
 }
 .custom-container {
   /* padding: 0px 15% 100px; */
-  max-width: 1100px;
+  max-width: 1250px;
   margin: auto;
 }
 .abt_img {
@@ -7897,6 +7930,12 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   font-family: 'Red Hat Display';
 }
 
+.news_update_header_font{
+  font-size: 16px;
+  color: white;
+  font-family: 'Red Hat Display';
+}
+
 /* .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -7923,9 +7962,18 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 .marketMakingInnerBox{
   border: 1.52px solid #FFFFFF4A;
-  width: 32%;
+  width: 30%;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 15px 20px;
+  position: relative;
+  min-width: 300px;
+}
+
+.marketMakingInnerBoxConcentrated{
+  border: 1.52px solid #FFFFFF4A;
+  width: 30%;
+  text-align: center;
+  padding: 25px 20px 15px 20px;
   position: relative;
   min-width: 300px;
 }
@@ -8140,6 +8188,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   .marketMakingBoxEcosystem{
     flex-wrap: wrap;
     justify-content: end;
+    margin: 0px 12px;
   }
 
   .explore_more_pddng{
@@ -8418,6 +8467,27 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 @media screen and (max-width: 767px) {
+
+  .marketMakingInnerBox{
+    padding: 6px 20px 15px 20px;
+    min-width: 350px;
+      margin-bottom: 30px;
+  }
+
+  .marketMakingInnerBoxConcentrated{
+    padding: 20px;
+    min-width: 325px;
+      margin-bottom: 30px;
+  }
+
+  .mb_20_mob{
+    margin-bottom: 20px;
+  }
+
+  .cntc_wdth{
+    width: 90%
+  }
+
   .mbNeg25_mob{
     margin-bottom: -25px;
    }
@@ -8436,10 +8506,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   min-height: 180px;
 }
 
-.marketMakingInnerBox{
-  min-width: 350px;
-    margin-bottom: 30px;
-}
+
 }
 
 @media screen and (max-width: 550px) {

@@ -455,7 +455,7 @@
         position: absolute;
     } */
     .navbar-brand img {
-        max-width: 100%;
+        max-width: 150px;
     }
     .navbar-toggler {
         border: 0 none;
@@ -1284,7 +1284,7 @@
         margin-bottom: 20px;
     }
     .navbar-brand img {
-        max-width: 200px;
+        max-width: 120px;
     }
     .navbar-nav {
         border-right: 0 none;

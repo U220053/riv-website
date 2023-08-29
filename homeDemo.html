@@ -344,7 +344,8 @@
 
     <section class="explore_more" id="explore_more_id">
       <div class="container-fluid">
-          <div class="row align-items-center justify-content-lg-end">
+          <!-- <div class="row align-items-center justify-content-lg-end"> -->
+            <div class="row">
               <div class="col-lg-2 col-md-3 col-8 px-md-0">
                   <p class="explore_more-label">
                     New Updates
@@ -360,28 +361,28 @@
                   <div class="swiper-container explore_cards_swiper">
                       <div class="swiper-wrapper">
                           <a href="https://medium.com/rivera-money/%EF%B8%8Ftitans-of-rivera-%EF%B8%8F-exclusive-100-nfts-for-the-top-ogs-bff2a40332d9" target="_blank" class="swiper-slide explore_cards-each text-dark">
-                              <div class="update_header_font">Launching “Titans of Rivera” OG NFT Badges</div>
+                              <div class="news_update_header_font">Launching “Titans of Rivera” OG NFT Badges</div>
                               <div class="explore_more_pos">
                                 <div><img src="/assets/images/arrow.svg" /></div>
                                 <div><img src="/assets/images/newsUpdate1.png" class="height_130" /></div>
                               </div>
                           </a>
                           <a href="https://medium.com/rivera-money/rivera-liquidity-infrastructure-for-mantle-ab44ef2f39dc" target="_blank" class="swiper-slide explore_cards-each text-dark">
-                            <div class="update_header_font">Strategic partnership with Mantle Network</div>
+                            <div class="news_update_header_font">Strategic partnership with Mantle Network</div>
                             <div class="explore_more_pos">
                               <div><img src="/assets/images/arrow.svg" /></div>
                               <div><img src="/assets/images/newsUpdate2.png" class="height_130" /></div>
                             </div>
                           </a>
                           <a href="https://medium.com/rivera-money/awarded-uniswap-bounty-for-innovating-structured-products-on-concentrated-lp-pools-83c6f2b79632" target="_blank" class="swiper-slide explore_cards-each text-dark">
-                            <div class="update_header_font">Rivera is awarded Uniswap innovation bounty</div>
+                            <div class="news_update_header_font">Rivera is awarded Uniswap innovation bounty</div>
                             <div class="explore_more_pos">
                               <div><img src="/assets/images/arrow.svg" /></div>
                               <div><img src="/assets/images/update2.svg" class="height_130" /></div>
                             </div>
                           </a>
                           <a href="https://medium.com/rivera-money/incentivized-testnet-launch-powered-by-mantle-network-920a0d24b19a" target="_blank" class="swiper-slide explore_cards-each text-dark">
-                            <div class="update_header_font">Rivera Incentivized Testnet is Live</div>
+                            <div class="news_update_header_font">Rivera Incentivized Testnet is Live</div>
                             <div class="explore_more_pos">
                               <div><img src="/assets/images/arrow.svg" /></div>
                               <div><img src="/assets/images/newsUpdate4.png" class="height_130" /></div>
@@ -408,24 +409,25 @@
           <div class="marketMakingBox">
             <div class="marketMakingInnerBox" style="background-image: url(/assets/images/redBg.png)">
               <div class="redBox">Degens</div>
-              <img src="/assets/images/marketMaking1.png">
+              <img src="/assets/images/marketMaking1.png" style="margin-top: 50px;">
               <div class="update_header_font mb-3 mt-3 fnt_600">Market Adaptive Strategy</div>
               <div class="mb-4 marketMakingSubHeader">Exotic ranges to capture maximum fees, elastically managed as per the market volatility</div>
-              <div class="mb-3"><button class="btn marketMakingBtn marketMakingBtnHvr">Invest Now</button></div>
+              <div class="mb-3"><button class="btn marketMakingBtn" disabled>Coming Soon</button></div>
             </div>
             <div class="marketMakingInnerBox" style="background-image: url(/assets/images/yellowBg.png)">
               <div class="yellowBox">Institutions</div>
-              <img src="/assets/images/marketMaking2.png">
+              <img src="/assets/images/marketMaking2.png" style="margin-top: 50px;">
               <div class="update_header_font mb-3 mt-3 fnt_600">Steady Spread Strategy</div>
               <div class="mb-4 marketMakingSubHeader">Distributed ranges with high volatility margin, designed to minimize impermanent loss </div>
-              <div class="mb-3"><button class="btn marketMakingBtn marketMakingBtnHvr">Invest Now</button></div>
+              <div class="mb-3"><button class="btn marketMakingBtn marketMakingBtnHvr" onclick="window.open('https://testnet.rivera.money/', '_blank')">Invest Now</button></div>
             </div>
             <div class="marketMakingInnerBox" style="background-image: url(/assets/images/greenBg.png)">
               <div class="greenBox">Conservative</div>
-              <img src="/assets/images/marketMaking3.png" class="marketMaking3ImgWdth mt_48">
+              <img src="/assets/images/marketMaking3.png" class="marketMaking3ImgWdth mt_48" style="margin-top: 65px;
+              margin-bottom: 35px;">
               <div class="update_header_font mb-3 mt-3 fnt_600">Stable Spread Strategy</div>
               <div class="mb-4 marketMakingSubHeader">Market-making for the pegged asset pairs, volatility protection in high-risk markets</div>
-              <div class="mb-3"><button class="btn marketMakingBtn marketMakingBtnHvr">Invest Now</button></div>
+              <div class="mb-3"><button class="btn marketMakingBtn marketMakingBtnHvr" onclick="window.open('https://testnet.rivera.money/', '_blank')">Invest Now</button></div>
             </div>
           </div>
 
@@ -463,18 +465,18 @@
             <section>
               <div class="custom-container">
               <div class="marketMakingBox">
-                <div class="marketMakingInnerBox gray_bg">
-                  <img src="/assets/images/liquidity1.svg" class="wdth_width_150 mb-2 mt-2">
+                <div class="marketMakingInnerBoxConcentrated gray_bg">
+                  <img src="/assets/images/liquidity1.svg" class="wdth_width_150 mb-3 mt-2">
                   <div class="update_header_font mb-2 mt-3 fnt_600">DeFi Composable Positions</div>
                   <div class="lh_1 marketMakingSubHeader mb-3 mt-3">Unlock liquidity on your investment positions or invest in structured strategies.</div>
                 </div>
-                <div class="marketMakingInnerBox gray_bg">
-                  <img src="/assets/images/liquidity2.svg" class="wdth_height_90 mb-2 mt-2">
+                <div class="marketMakingInnerBoxConcentrated gray_bg">
+                  <img src="/assets/images/liquidity2.svg" class="wdth_height_90 mb-3 mt-2">
                   <div class="update_header_font mb-2 mt-3 fnt_600">Passive LP Expereince</div>
                   <div class="lh_1 marketMakingSubHeader mb-3 mt-3">Liquidity ranges are managed for you, and the earnings are compounded.</div>
                 </div>
-                <div class="marketMakingInnerBox gray_bg">
-                  <img src="/assets/images/liquidity3.svg" class="wdth_height_90 mb-2 mt-2">
+                <div class="marketMakingInnerBoxConcentrated gray_bg">
+                  <img src="/assets/images/liquidity3.svg" class="wdth_height_90 mb-3 mt-2">
                   <div class="update_header_font mb-2 mt-3 fnt_600">Liquidity Mining Programs</div>
                   <div class="lh_1 marketMakingSubHeader mb-3 mt-3">Participate in liquidity mining programs and earn additional APY from rewards</div>
                 </div>
@@ -674,7 +676,7 @@
           </div>
 
           <div class="d-flex mbNeg25" style="justify-content: center;align-items: center;">
-            <div style="padding: 20px;"><img  src="/assets/images/mantleswap.svg" style="width:200px;cursor: pointer;"></div>
+            <div style="padding: 20px;"><img  src="/assets/images/mantleswap.svg" style="width:140px;cursor: pointer;"></div>
           </div>
          
         </div>
@@ -781,36 +783,41 @@
     <footer>
       <div class="top_footer bg_light_dark">
         <div class="custom-container-footer">
-          <div class="text-center mb-4 contct_btn">contact@rivera.money</div>
+          <div class="text-center contct_btn" style="margin-bottom: 40px;">
+            <img src="/assets/images/contactv2.png" class="cntc_wdth">
+          </div>
           <div class="row" style="justify-content: space-between;    align-items: center;">
-            <div class="col-lg-4 col-md-12">
-              <div class="footer_font mb-2">Subscribe to our Newsletter</div>
+            <div class="mb_20_mob">
+              <div class="footer_font mb-3">Subscribe to our Newsletter</div>
               <div
                 class="footer_logo"
               >
-              <a href="https://ethermail.io/community/rivera-money" target="_blank" class="page-scroll" >
+
+              <form class="early_access_form" id="early_access_form_submit">
+                <div class="d-flex"> <input
+                  type="email"
+                  class="form-control bck_trans"
+                  id="early_access_mail"
+                  placeholder="Your Email"
+                  required
+                />
+                <button type="submit" name="submit2"  class="ftr_btn">
+                  Subscribe
+                </button></div>
+               <div id="subcription">Thank you for subscribing.</div>
+              </form>
+
+              <!-- <a href="https://ethermail.io/community/rivera-money" target="_blank" class="page-scroll" >
                 <img alt="logo" src="assets/images/Newsletter.svg" style="width: 250px;"/>
               </a>
-              <!-- <a href="#home_section" class="page-scroll" >
-                <img alt="logo" src="assets/images/logo.webp" style="width: 130px;"/>
-              </a> -->
-              
+             -->
                 
               </div>
             </div>
-            <!-- <div class="col-lg-4 col-md-6 res_md_mt_30 res_sm_mt_20 ftr_contact_us">
-              <h4 class="footer_title_home" >
-                Contact us
-              </h4>
-              <ul class="footer_link list_arrow">
-                <li>
-                  <a href="mailto:contact@rivera.money">contact@rivera.money</a>
-                </li>
-              </ul>
-            </div> -->
-            <div class="col-lg-4 col-md-12 mt_20_res">
+           
+            <div class="mt_20_res">
               <div class="footer_logo">
-                <div class="footer_font mb-2">Join the community</div>
+                <div class="footer_font mb-3">Join the community</div>
                 <div>
                   <a href="https://rivera.gitbook.io/docs/" target="_blank" class="mr_10"> <img alt="medium" class="wdth_50" src="assets/images/gitbook_footer.png" /></a>
                   <a href="https://medium.com/rivera-money" target="_blank" class="mr_10"> <img alt="medium" class="wdth_50" src="assets/images/medium.webp" /></a>
@@ -822,8 +829,8 @@
             </div>
           </div>
         </div>
-        <div class="text-center mt-4" style="    font-size: 14px;">
-            <span>Copyright © 2023 | Rivera Money Inc | All rights reserved</span>
+        <div class="text-center" style="font-size: 14px;margin-top: 40px;">
+            <span>Copyright © 2023 | Rivera Money | All rights reserved</span>
         </div>
       </div>
 
@@ -925,6 +932,29 @@ aria-hidden="true">
     });
     </script> -->
 
+    <script>
+
+      window.onload = function() {
+        document.getElementById('subcription').hidden = true;
+        var screenWidth = window.innerWidth;
+          var left = (screenWidth - 1260) / 2;
+          if (left > 0) {
+              var leftPx = left.toString() + 'px';
+              document.getElementById("explore_more_id").style.marginLeft = leftPx;
+          }
+      };
+
+      window.addEventListener('resize', function (event) {
+        
+          var screenWidth = window.innerWidth;
+          var left = (screenWidth - 1260) / 2;
+          if (left > 0) {
+              var leftPx = left.toString() + 'px';
+              document.getElementById("explore_more_id").style.marginLeft = leftPx;
+          }
+      });
+  </script>
+
 <script>
  var swiper = new Swiper('.explore_cards_swiper', {
             slidesPerView: 3,
@@ -961,69 +991,17 @@ aria-hidden="true">
       });
     </script>
     
-    <script>
-       $(document).ready(function () {
-            var screenWidth = window.innerWidth;
-            var left = (screenWidth - 1170) / 2;
-            if (left > 0) {
-                var leftPx = left.toString() + 'px';
-                document.getElementById("explore_more_id").style.marginLeft = leftPx;
-            }
-        });
-        window.addEventListener('resize', function (event) {
-          
-            var screenWidth = window.innerWidth;
-            var left = (screenWidth - 1170) / 2;
-            if (left > 0) {
-                var leftPx = left.toString() + 'px';
-                document.getElementById("explore_more_id").style.marginLeft = leftPx;
-            }
-        });
-    </script>
-
-      <script>
- $(document).ready(function () {
-  $("#showMsg").hide();
-  $("#exampleModal2").modal("hide");
- });
-        $("#newsLttrDn").click(function (event) {
-            $("#exampleModal2").modal("hide");
-        });
-    
-        $("#newsletter_form_submit").submit(function (event) {
-            var sendData = $('#newsletter_email').val();
-            var body = { "email": sendData, "source":"daily newspaper subscription" }
-            $.post("https://backend.rivera.money/sales/contact_us", body)
-                .done(function (response_data) {
-                    if (response_data.success) {
-                      $("#showMsg").show();
-                    }
-                    else {
-                        var error = response_data.message
-                        alert(error)
-                    }
-                })
-                .fail(function () {
-                    alert("oops something went wrong !! please try after some time !!");
-                })
-    
-            event.preventDefault();
-        });
-    
-    </script>
-    
 
     <script>
              $("#early_access_form_submit").submit(function (event) {
-               debugger
                  var email = $('#early_access_mail').val();
                  var number = $('#mobile').val();
-                 window.open('https://tally.so/r/m6Lope?email=' + email,'_blank');
+                 //window.open('https://tally.so/r/m6Lope?email=' + email,'_blank');
                  var body = { "email":email, "contact":number, "source":"Get Early Access" }
                  $.post("https://backend.rivera.money/sales/contact_us", body)
                      .done(function (response_data) {
                          if (response_data.success) {
-                          $("#exampleModal2").modal("show");
+                          document.getElementById('subcription').hidden = false;
                          }
                          else {
                              var error = response_data.message
