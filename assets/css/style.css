@@ -7937,7 +7937,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .news_update_header_font{
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   font-family: 'Red Hat Display';
 }
@@ -8109,18 +8109,16 @@ input::-ms-input-placeholder { /* Microsoft Edge */
   -webkit-text-fill-color: transparent;
 }
 
-.ecosystemList li::before {
+/* .ecosystemList li::before {
   content: "\2022";
   background: linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%);
-  /* font-size: 72px; */
-  /* background: -webkit-linear-gradient(96.3deg, #55ADFF 3.46%, #A528DD 118.55%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   display: inline-block; 
   width: 1em;
   margin-left: -1em;
-}
+} */
 
 .color_snd{
  color: #9676ED;
@@ -8133,6 +8131,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
  .height_110{
  height: 110px;
  }
+
+ .height_120{
+  height: 120px;
+  }
 
  .mb_60{
   margin-bottom: 60px;
