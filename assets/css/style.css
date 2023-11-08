@@ -7184,6 +7184,39 @@ html.w-mod-touch * {
 	place-items: start;
 } */
 
+.fnt_14{
+  font-size: 14px;
+}
+
+.wdth_45{
+  width: 45px;
+}
+
+.tvl_flex{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tvl_bg{
+  background: rgba(149, 149, 149, 0.25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.mlr_15_25{
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.tvl_color{
+ color: #AE5BFC;
+ font-size: 22px;
+    font-family: 'Red Hat Display';
+}
+
 .flex_content {
   display: flex;
   justify-content: space-evenly;

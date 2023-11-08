@@ -309,6 +309,7 @@
                   <p class="mobile_vault_hero-para px-0 text-white fnt_18">
                     <!-- Next-gen ALM to unlock risk-shared liquidity in DeFi.  -->
                   </p>
+
                   <div class="btn_group pb-3">
                     <!-- <button type="submit" name="submit2" style="margin: auto;"  class="btn btn-default btn-radius nav-link content-popup" onclick="OpenMvp()">
                       Launch App
@@ -323,6 +324,18 @@
                     </button>
                   </div>
                   </div>
+
+                  <div class="tvl_flex pb-3 mt-5">
+                  <div class="tvl_bg">
+                    <div>
+                      <img class="wdth_45" src="/assets/images/tvlCircle.svg" />
+                    </div>
+                    <div class="mlr_15_25"> <div class="fnt_14">Total Value Locked</div>
+                    <div class="tvl_color fnt_600"  id="tvlData">$0</div></div>
+                    </div>
+                   
+                  </div>
+
                   <!-- <div class="btn_group pb-3">
                     
                     <div >
@@ -915,6 +928,9 @@ aria-hidden="true">
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/swiper.min.js"></script>
 
+    <script>
+      </script>
+
     <!-- <script src="assets/js/rellax.min.js"></script>
     <script>
       var rellax = new Rellax(".rellax", {
@@ -941,6 +957,28 @@ aria-hidden="true">
     <script>
 
       window.onload = function() {
+        
+
+
+        fetch('https://api.llama.fi/tvl/rivera-money') 
+  .then(response => { 
+    if (response.ok) { 
+      return response.json(); // Parse the response data as JSON 
+    } else { 
+      throw new Error('API request failed'); 
+    } 
+  }) 
+  .then(data => { 
+    // Process the response data here 
+    document.getElementById('tvlData').innerHTML = '$' + data.toFixed(2);
+    console.log("logging dat",data); // Example: Logging the data to the console 
+  }) 
+  .catch(error => { 
+    // Handle any errors here 
+    console.error(error); // Example: Logging the error to the console 
+  });
+
+
         document.getElementById('subcription').hidden = true;
         var screenWidth = window.innerWidth;
           var left = (screenWidth - 1260) / 2;
