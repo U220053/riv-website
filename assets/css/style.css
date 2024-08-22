@@ -8522,10 +8522,6 @@ input::-ms-input-placeholder {
     font-size: 22px;
     line-height: 30px;
   }
-  .section_subheader_res {
-    width: 90%;
-    margin: auto;
-  }
 
   .col,
   .col-1,
@@ -8729,131 +8725,8 @@ input::-ms-input-placeholder {
 
 /* On screens that are 992px or less, set the background color to olive */
 @media screen and (max-width: 450px) {
-  /* .rskMtr{
-    width: 100%;
-  } */
-  /* .progress-bar-position{
-    flex-direction: column;
-    align-items: flex-start;
-  } */
 }
 
-/* .bannerpre {
-  background-image: url(/assets/images/bgpremine1.png);
-  background-size: cover;
-  color: white;
-  padding: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.banner-contentpre {
-  max-width: 70%;
-}
-.hh {
-  margin: 0;
-  color: white;
-  font-size: 2rem;
-}
-.pa {
-  margin: 10px 0 0;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 100;
-}
-.cta-button {
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.cta-button:hover {
-  color: black; 
-  background-color: #f0f0f0; 
-}
-@media (max-width: 768px) {
-  .banner {
-    flex-direction: column;
-    text-align: center;
-  }
-  .banner-content {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-} */
-/* .bannerpre {
-  background-image: url(/assets/images/bgpremine1.png);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 80px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.banner-contentpre {
-  max-width: 70%;
-}
-
-.hh {
-  margin: 0;
-  color: white;
-  font-size: 2rem;
-}
-
-.pa {
-  margin: 10px 0 0;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 100;
-}
-
-.cta-button {
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  color: black;
-  background-color: #f0f0f0;
-}
-
-@media (max-width: 768px) {
-  .bannerpre {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .banner-contentpre {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .hh {
-    font-size: 1.5rem;
-  }
-
-  .pa {
-    font-size: 1rem;
-  }
-
-  .cta-button {
-    width: 50%;
-    padding: 15px;
-    font-size: 1rem;
-  }
-} */
 .hh {
   margin-bottom: 60px;
 }
@@ -8865,7 +8738,7 @@ input::-ms-input-placeholder {
 }
 .article-card {
   flex-basis: calc(33.333% - 20px);
-  background-color: #2a2a2a;
+  background-color: #282e3a;
   /* border-radius: 10px; */
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -8896,7 +8769,7 @@ input::-ms-input-placeholder {
     flex-basis: 100%;
   }
   .articles-container {
-    padding: 20px; /* Reduced padding for container on mobile */
+    padding: 40px; /* Reduced padding for container on mobile */
   }
 }
 /* banner */
@@ -8950,12 +8823,15 @@ input::-ms-input-placeholder {
 }
 
 .custom-link {
-  color: #007bff;
+  color: black;
   text-decoration: none;
+
+  border-bottom: 1px solid black;
+  width: 10% !important;
 }
 
 .custom-link:hover {
-  text-decoration: underline;
+  color: #0052ce;
 }
 
 .crsr_pntr {
@@ -8989,9 +8865,74 @@ input::-ms-input-placeholder {
 .notMobileDevice {
   display: none;
 }
-
+.ban {
+  font-weight: 500;
+  font-size: large;
+}
 @media (min-width: 768px) {
   .notMobileDevice {
     display: inline-block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ban {
+    font-size: small;
+  }
+}
+/* partners */
+.partners-section {
+  padding: 50px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 6px;
+  justify-content: center;
+}
+
+.partner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.partner-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .partner-item {
+    height: 80px;
+  }
+}
+.roww {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (max-width: 768px) {
+  .roww {
+    margin-left: -100px;
+    margin-right: -15px;
   }
 }
