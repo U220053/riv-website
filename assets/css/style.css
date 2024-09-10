@@ -177,7 +177,7 @@ input {
   position: relative;
   /* text-transform: uppercase; */
   vertical-align: middle;
-  min-width: 110px;
+  /* min-width: 110px; */
   cursor: pointer;
   background: white;
 }
@@ -8203,7 +8203,7 @@ input::-ms-input-placeholder {
 }
 
 .emailBoxWdth {
-  min-width: 300px;
+  min-width: 200px;
 }
 
 /* On screens that are 1460px or less, set the background color to olive */
