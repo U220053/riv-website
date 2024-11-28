@@ -7197,6 +7197,8 @@ html.w-mod-touch * {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  /* flex-wrap: wrap; */
+  flex-wrap: nowrap;
 }
 .tvl_bg {
   background: rgba(149, 149, 149, 0.25);
@@ -8959,7 +8961,12 @@ input::-ms-input-placeholder {
   .partner-item {
     height: 60px; /* Adjust height for mobile */
   }
-}
-.tvl_flex1 {
-  padding: 0px 20px;
+  .tvl_flex1 {
+    padding: 0px 20px;
+    flex-wrap: wrap;
+  }
+  .tvl_bg1 {
+    width: 100px;
+    height: 50px;
+  }
 }
