@@ -7192,8 +7192,22 @@ html.w-mod-touch * {
   align-items: center;
   justify-content: center;
 }
-
+.tvl_flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 .tvl_bg {
+  background: rgba(149, 149, 149, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 15px;
+}
+.tvl_bg1 {
+  width: 193px;
+  height: 60px;
   background: rgba(149, 149, 149, 0.25);
   display: flex;
   justify-content: space-evenly;
@@ -8793,12 +8807,12 @@ input::-ms-input-placeholder {
 }
 
 .header_wrap {
-  position: sticky;
-  top: 50px;
+  /* position: sticky; */
+  /* top: 50px; */
   width: 100%;
   z-index: 1000;
 
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 .redHatFont {
@@ -8880,7 +8894,6 @@ input::-ms-input-placeholder {
     font-size: small;
   }
 }
-/* partners */
 .partners-section {
   padding: 50px;
 }
@@ -8890,26 +8903,14 @@ input::-ms-input-placeholder {
   margin-bottom: 40px;
   color: white;
 }
-
+/* partner section */
 .partners-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  /* gap: 20px; */
-  column-gap: 20px;
-  row-gap: 10px;
-}
-
-.grid-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* gap: 20px; */
-  column-gap: 20px;
-  row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* Set to 4 columns */
+  gap: 20px; /* Adjust the spacing between items */
 }
 
 .partner-item {
-  flex: 0 0 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8922,19 +8923,26 @@ input::-ms-input-placeholder {
   max-height: 100%;
   object-fit: contain;
 }
-.partner-item:last-child {
-  flex: 0 0 190px;
+.partner-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
+.partner-small img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  height: 40px;
+}
+/* Adjustments for mobile screens */
 @media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns on smaller screens */
+    gap: 20px; /* Reduce gap for better fit */
+  }
+
   .partner-item {
-    flex: 0 0 130px;
-    /* height: 80px; */
+    height: 60px; /* Adjust height for mobile */
   }
-  .grid-row {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  /* .partner-item:last-child {
-    flex: 0 0 160px;
-  } */
 }
